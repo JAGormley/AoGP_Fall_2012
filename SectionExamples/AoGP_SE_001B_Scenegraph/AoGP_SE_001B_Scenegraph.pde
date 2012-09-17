@@ -107,7 +107,7 @@ void draw() {
       // Notice that when childA's visibility is turned off, all of its children and grandchildren
       // become invisible as well. Without a scenegraph, we would have needed to toggle each
       // descendant node individually.
-      childA.toggleVisibility();
+      //childA.toggleVisibility();
     }
   }
 }
