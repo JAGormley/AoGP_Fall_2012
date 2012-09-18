@@ -37,16 +37,16 @@ class NodeGeom extends NodeBase {
       noStroke();
       fill(mColor);
       //drawRoot
-      drawRoot(mType);
-
+      //drawRoot(mType);
+      drawGeom(mType);
+      
       //drawChildren
       int tChildCount = getChildCount();
-      println(tChildCount);
       for (int i = 0; i < tChildCount; i++) {
         color tempColor = getChild(i).getColor();
         int tempType = getChild(i).getType(); //get type of child
         fill(tempColor);
-        getChild(i).drawGeom(tempType); //change this to dynamically change/select shapes
+        getChild(i).draw(); //change this to dynamically change/select shapes
       }
 
       popMatrix();
@@ -94,16 +94,6 @@ class NodeGeom extends NodeBase {
     mColor = iColor;
   }
 
-  void drawRoot(int iType) {
-    if (mType == 0) {
-      beginShape();
-      vertex(10, 0, 0);
-      vertex(90, 0, 0);
-      vertex(100, 100, 0);
-      vertex(0, 100, 0);
-      endShape();
-    }
-  }
 
 
   void drawGeom(int iType) {
@@ -122,7 +112,31 @@ class NodeGeom extends NodeBase {
     }
     else if (mType == 2) {
       //draw left eye here
-      ellipse(0, 0, 422, 422);
+      ellipse(40, -30, 10, 10);
+    }
+    else if (mType == 3) {
+      //draw right eye here
+      ellipse(60, -30, 10, 10);
+    }
+    else if (mType == 4) {
+      //draw mouth
+      rect(35, -15, 30, 5);
+    }
+    else if (mType == 5) {
+      //draw legs
+      rect(0, 100, 100, 30);
+    }
+    else if (mType == 6) {
+      //draw feet
+      rect(0, 130, 100, 25);
+    }
+    else if (mType == 7) {
+      //draw left arm
+      rect(-10, 0, 20, 60);
+    }
+    else if (mType == 8) {
+      //draw right arm
+      rect(90, 0, 20, 60);
     }
   }
 }
