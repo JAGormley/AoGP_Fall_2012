@@ -95,9 +95,9 @@ class NodeBase {
     }
   }
   
-  void draw(){
+  //void draw(){
     
-  }
+  //}
 
 }
 
