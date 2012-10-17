@@ -1,4 +1,4 @@
-var subDivisionU = 4, subDivisionV = 3, subDivLength = 100,
+var subDivisionsU = 4, subDivisionsV = 3, subDivLength = 100,
 currU = 0, currV = 0, goRight = true, stepA = true, complete = false
 
 
@@ -68,79 +68,94 @@ $( document ).ready( function(){
 	// geom.computeFaceNormals();
 	// geom.computeVertexNormals();
 
-	// var mat = new THREE.MeshBasicMaterial({ color: 0xFF0000, wireframe: true });
+	// var mat = new THREE.MeshBasicMaterial({ color: 0xFF0000 });
 	// var ribbon = new THREE.Ribbon( geom, mat );
 	// scene.add( ribbon );
 
 
 
  	//two triangle
-	var geom = new THREE.Geometry();
-	geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
-	geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
-	geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
-	geom.vertices.push( new THREE.Vector3( 100, -100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 200, 100, 0 ) ); //an extra triangle
+	// var geom = new THREE.Geometry();
+	// geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
+	// geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
+	// geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
+	// geom.vertices.push( new THREE.Vector3( 100, -100, 0 ) );
+	// // geom.vertices.push( new THREE.Vector3( 200, 100, 0 ) ); //an extra triangle
 
-	geom.computeFaceNormals();
-	geom.computeVertexNormals();
+	// geom.computeFaceNormals();
+	// geom.computeVertexNormals();
 
-	var mat = new THREE.MeshBasicMaterial({ color: 0xFF0000, wireframe: true });
-	var ribbon = new THREE.Ribbon( geom, mat );
-	scene.add( ribbon );
+	// var mat = new THREE.MeshBasicMaterial({ color: 0xFFFF00 });
+	// var ribbon = new THREE.Ribbon( geom, mat );
+	// scene.add( ribbon );
 
 
+	//create geom object to access in loop
+	window.geom = new THREE.Geometry();
 	
-	
+
 	scene.add(group)
 	loop()	
 })
 
-var triangle = {
-	generate : function(_vertA, _vertB, _vertC){
-		var vertA = _vertA;
-		var vertB = _vertB;
-		var vertC = _vertC;
-		
-		var mVerts = new THREE.Geometry();
-		mVerts.vertices.push( vertA ); 
-		mVerts.vertices.push( vertB ); 
-		mVerts.vertices.push( vertC );
 
-		mVerts.faces.push( new THREE.Face3( 0, 1, 2 ) );
-		mVerts.computeFaceNormals();
-		
-		var object = new THREE.Mesh( mVerts, cubeMaterial0 );
-		object.receiveShadow = true
-		object.castShadow = true
-		group.add(object)
-		
-		return mVerts; //return the triangle object to fill the mTriangles array in the trianglesContainer
-	}
+
+function render(){	
+	// while(!complete){
+	// 	geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+
+	// 	//check row ending
+	// 	if(!stepA && ( ( goRight && currU == subDivisionsU + 1 ) || (!goRight && curU == 0) )){
+	// 		goRight = !goRight
+
+	// 		//create degenerate triangle (needs two points to fully turn around)
+	// 		geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+	// 		geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+
+	// 		stepA = true //reset to step type A
+	// 		goRight != goRight //alternate between row types
+
+	// 		complete = (currV == subDivisionsV + 1) //will return false until last vertice
+
+	// 		console.log('currU: '+currU+', currV: '+ currV)
+	// 		if(goRight){
+	// 			if(stepA){
+	// 				currV += subDivLength
+	// 			}else{
+	// 				currU += subDivLength
+	// 				currV -= subDivLength
+	// 			}
+	// 		}else{
+	// 			if(stepA){
+	// 				currV += subDivLength
+	// 			}else{
+	// 				currU -= subDivLength
+	// 				currV -= subDivLength
+	// 			}
+	// 		}
+	// 		stepA = !stepA
+
+
+	// 	}
+	// }
+
+	computeGroup()
+
+
+	renderer.render( scene, camera )
 }
 
-
-var trianglesContainer = {
-	mTriangles : [],
-	
-	addTriangle : function(tri){
-		this.mTriangles.push(tri);
-	},
-	
-	draw : function(){
-		for (var i = 0; i < this.mTriangles.length-1; i++) {
-			this.mTriangles[i].create();
-		}
-	},
-	getTriangle : function(_index){
-		i = _index
-	    if( i >= 0 && i < this.mTriangles.length-1 ) {
-	      return this.mTriangles[i]; //return triangle
-	    }
-	    return null; //else return null
+var didHappen = false;
+function computeGroup(){
+	if(!didHappen){
+		//compute normals and add it to the scene
+		geom.computeFaceNormals()
+		geom.computeVertexNormals()
+		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00 }) );
+		scene.add(ribbon)
+		didHappen = true
 	}
 }
-
 
 function setupThree(){
 	window.scene = new THREE.Scene()
@@ -229,10 +244,6 @@ function animateTriangles(){
 //     }
 // }, 1000)
 
-
-function render(){	
-	renderer.render( scene, camera )
-}
 
 
 function addControls(){
