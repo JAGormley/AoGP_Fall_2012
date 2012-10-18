@@ -1,8 +1,12 @@
 var subDivisionsU = 3, subDivisionsV = 3, subDivLength = 100,
 currU = 0, currV = 0, goRight = true, stepA = true, complete = false
 
+var postprocessing = { enabled  : true };
+var composer
 
 $( document ).ready( function(){
+	if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+
 	setupThree()
 	addLights()
 	addControls();
@@ -11,6 +15,16 @@ $( document ).ready( function(){
 
 	window.cubeMaterial0 = new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false } );
 	
+
+	//shaders
+	var renderModel = new THREE.RenderPass( scene, camera );
+	var effectCopy = new THREE.ShaderPass( THREE.CopyShader );
+	effectCopy.renderToScreen = true;
+
+	composer = new THREE.EffectComposer( renderer );
+	composer.addPass( renderModel );
+	composer.addPass( effectCopy );
+
 
 	//attempt at double matrix
 	//[0][0] first element in first array
@@ -90,6 +104,7 @@ $( document ).ready( function(){
 	// scene.add( ribbon );
 
 
+
 	//create geom object to access in loop
 	var geom = new THREE.Geometry();
 	while(!complete){
@@ -99,7 +114,7 @@ $( document ).ready( function(){
 		// check row ending
 		if(!stepA && ( ( goRight && currU == subDivisionsU * subDivLength ) || (!goRight && currU == 0) )){
 			goRight = !goRight
-			console.log('turning point')
+			
 			//create degenerate triangle (needs two points to fully turn around)
 			geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
 			geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
@@ -109,9 +124,7 @@ $( document ).ready( function(){
 
 			complete = (currV == subDivisionsV * subDivLength ) //will return false until last vertice
 		}
-		// complete = (currU == subDivisionsU * (subDivLength*2) ) 
 
-		console.log('currU: '+currU+', currV: '+ currV)
 		if(goRight){
 			if(stepA){
 				currV += subDivLength
@@ -127,15 +140,18 @@ $( document ).ready( function(){
 				currV -= subDivLength
 			}
 		}
-
-		//alternate between step types
-		stepA = !stepA
+		
+		stepA = !stepA //alternate between step types
 	}
 
 	geom.computeFaceNormals()
 	geom.computeVertexNormals()
-	var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00 }) );
+	var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+	// ribbon.rotation.y = Math.PI; //rotate 180 degrees
+	ribbon.position.x = subDivisionsU * -subDivLength / 2
+	ribbon.position.y = subDivisionsV * -subDivLength / 2
 	group.add(ribbon)
+
 
 
 	scene.add(group)
@@ -146,7 +162,9 @@ $( document ).ready( function(){
 
 function render(){	
 
-	renderer.render( scene, camera )
+	// renderer.render( scene, camera )
+	renderer.clear();
+	composer.render( 0.1 )
 }
 
 
@@ -158,16 +176,22 @@ function setupThree(){
 	ASPECT     = WIDTH / HEIGHT,
 	NEAR       = 0.1,
 	FAR        = 10000
-	
+	scene.fog = new THREE.FogExp2( 0x000000, 0.0016 );
+
 	window.camera = new THREE.PerspectiveCamera( VIEW_ANGLE, ASPECT, NEAR, FAR )
 	camera.position.set( 0, 100, 400 )
 	camera.lookAt( scene.position )
 	scene.add( camera )
 	
-	window.renderer = new THREE.WebGLRenderer({ antialias: true })
-	renderer.setSize( WIDTH, HEIGHT )
-	renderer.shadowMapEnabled = true
-	renderer.shadowMapSoft = true
+	// window.renderer = new THREE.WebGLRenderer({ antialias: true })
+	// renderer.setSize( WIDTH, HEIGHT )
+	// renderer.shadowMapEnabled = true
+	// renderer.shadowMapSoft = true
+
+	window.renderer = new THREE.WebGLRenderer( { antialias: false } );
+	renderer.setSize( WIDTH, HEIGHT );
+	renderer.autoClear = false;
+	renderer.setClearColor( 0xFF0000, 1 );
 
 	$( '#three' ).append( renderer.domElement )
 }	
@@ -203,7 +227,6 @@ function addLights(){
 
 		
 function loop(){
-	//animateTriangles();
 
 	render()
 	controls.update() 
@@ -239,4 +262,6 @@ function onWindowResize(){
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize( window.innerWidth, window.innerHeight );
+
+    composer.reset();
 }

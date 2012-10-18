@@ -40,7 +40,7 @@ $( document ).ready( function(){
 	// var reflectionCube = THREE.ImageUtils.loadTextureCube( urls );
 	// window.cubeMaterial1 = new THREE.MeshLambertMaterial( { color: 0xffffff, ambient: 0xaaaaaa, envMap: reflectionCube } )
 	// window.cubeMaterial2 = new THREE.MeshLambertMaterial( { color: 0xff6600, ambient: 0x993300, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.3 } );
-	window.cubeMaterial0 = new THREE.MeshPhongMaterial( { wireframe: true, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false } );
+	window.cubeMaterial0 = new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false, side: THREE.DoubleSide } );
 	
 	
 	//drawwing a single triangle
