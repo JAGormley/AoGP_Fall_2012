@@ -1,4 +1,4 @@
-var subDivisionsU = 4, subDivisionsV = 3, subDivLength = 100,
+var subDivisionsU = 3, subDivisionsV = 3, subDivLength = 100,
 currU = 0, currV = 0, goRight = true, stepA = true, complete = false
 
 
@@ -91,8 +91,52 @@ $( document ).ready( function(){
 
 
 	//create geom object to access in loop
-	window.geom = new THREE.Geometry();
-	
+	var geom = new THREE.Geometry();
+	while(!complete){
+		//plot vertice in mesh
+		geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+
+		// check row ending
+		if(!stepA && ( ( goRight && currU == subDivisionsU * subDivLength ) || (!goRight && currU == 0) )){
+			goRight = !goRight
+			console.log('turning point')
+			//create degenerate triangle (needs two points to fully turn around)
+			geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+			geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
+
+			stepA = true //reset to step type A
+			goRight != goRight //alternate between row types
+
+			complete = (currV == subDivisionsV * subDivLength ) //will return false until last vertice
+		}
+		// complete = (currU == subDivisionsU * (subDivLength*2) ) 
+
+		console.log('currU: '+currU+', currV: '+ currV)
+		if(goRight){
+			if(stepA){
+				currV += subDivLength
+			}else{
+				currU += subDivLength
+				currV -= subDivLength
+			}
+		}else{
+			if(stepA){
+				currV += subDivLength
+			}else{
+				currU -= subDivLength
+				currV -= subDivLength
+			}
+		}
+
+		//alternate between step types
+		stepA = !stepA
+	}
+
+	geom.computeFaceNormals()
+	geom.computeVertexNormals()
+	var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00 }) );
+	group.add(ribbon)
+
 
 	scene.add(group)
 	loop()	
@@ -101,61 +145,10 @@ $( document ).ready( function(){
 
 
 function render(){	
-	// while(!complete){
-	// 	geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
-
-	// 	//check row ending
-	// 	if(!stepA && ( ( goRight && currU == subDivisionsU + 1 ) || (!goRight && curU == 0) )){
-	// 		goRight = !goRight
-
-	// 		//create degenerate triangle (needs two points to fully turn around)
-	// 		geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
-	// 		geom.vertices.push( new THREE.Vector3( currU, currV, 0 ) );
-
-	// 		stepA = true //reset to step type A
-	// 		goRight != goRight //alternate between row types
-
-	// 		complete = (currV == subDivisionsV + 1) //will return false until last vertice
-
-	// 		console.log('currU: '+currU+', currV: '+ currV)
-	// 		if(goRight){
-	// 			if(stepA){
-	// 				currV += subDivLength
-	// 			}else{
-	// 				currU += subDivLength
-	// 				currV -= subDivLength
-	// 			}
-	// 		}else{
-	// 			if(stepA){
-	// 				currV += subDivLength
-	// 			}else{
-	// 				currU -= subDivLength
-	// 				currV -= subDivLength
-	// 			}
-	// 		}
-	// 		stepA = !stepA
-
-
-	// 	}
-	// }
-
-	computeGroup()
-
 
 	renderer.render( scene, camera )
 }
 
-var didHappen = false;
-function computeGroup(){
-	if(!didHappen){
-		//compute normals and add it to the scene
-		geom.computeFaceNormals()
-		geom.computeVertexNormals()
-		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00 }) );
-		scene.add(ribbon)
-		didHappen = true
-	}
-}
 
 function setupThree(){
 	window.scene = new THREE.Scene()
@@ -219,30 +212,6 @@ function loop(){
 }
 
 
-//animate individual triangle objects
-function animateTriangles(){
-	var tContainerGet = Object.create(trianglesContainer);
-	currTri = tContainerGet.getTriangle( index );
-	if( currTri != null ) {
-	  for(var i = 0; i < 3; i++) {
-	    if( goingUp ){
-	      currTri.vertices[i].z -= subdivLength;  // z pozition is moved
-		}else{
-	      currTri.vertices[i].z += subdivLength;
-		}
-	  }
-	}	
-}
-//timer that updates which triangle being animated
-// setInterval(function(){
-// 	if( index + 1 < subdivisionsX * subdivisionsY * 2 ) {
-//       index++;	      // Increment triangle index
-//     }
-//     else {
-//       index   = 0;	      // Reset triangle index
-//       goingUp = !goingUp;	      // Reverse direction
-//     }
-// }, 1000)
 
 
 
