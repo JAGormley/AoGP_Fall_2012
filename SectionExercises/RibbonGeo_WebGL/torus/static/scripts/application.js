@@ -80,7 +80,7 @@ $( document ).ready( function(){
 
 			//if we're at the end of a row on a step b move to the final colum,
 			//then we add the last vertex in the mesh
-			reachedEnd = (currV == subdivisionsV * subdivisionsU)
+			reachedEnd = (currV == subdivisionsV * (subdivisionsU/10) )
 		}
 
 		if( goRight ){
