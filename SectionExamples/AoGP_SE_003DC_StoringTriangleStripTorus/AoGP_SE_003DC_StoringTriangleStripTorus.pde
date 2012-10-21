@@ -114,6 +114,7 @@ void draw() {
   PVector dirToNextCenter = currProfileCenter.get();
   dirToNextCenter.sub(new PVector( mTorusRadius * cos( thetaV+deltaThetaV ), 0.0, mTorusRadius * sin( thetaV+deltaThetaV ) ));
   dirToNextCenter.normalize();
+  
   // Get the up axis for the plane upon which the current profile resides.
   // We can find this by taking the cross product of our vector between profiles centers and a vector traveling along the y-axis, 
   // which in our case, is the axis of rotation for the placement of profile centers.

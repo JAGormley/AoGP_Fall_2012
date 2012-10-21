@@ -3,11 +3,10 @@
 //subdivisionsU is the number of subdivisions aorund each circular profile
 //subdivisionsV is the number of profiles in the cylinder
 //stepA is to toggle between the direction in creating the Ribbon
+//deltaThetaV is the angle between each vertex in a profile
 //reachedEnd finalized the geometry
 var mProfileRadius = 100, mCylinderLen = 200, subdivisionsU = 40, subdivisionsV = 10, 
-    currU = 0, currV = 0, goRight = true, stepA = true, reachedEnd = false
-
-var deltaThetaU; //the angle between each vertex in a profile    
+    currU = 0, currV = 0, goRight = true, stepA = true, deltaThetaU = Math.PI*2 / subdivisionsU, reachedEnd = false
 
 $( document ).ready( function(){
 	if ( ! Detector.webgl ) Detector.addGetWebGLMessage()
@@ -20,7 +19,6 @@ $( document ).ready( function(){
 
 
 	var cylinderContainer = Object.create( TriStripContainer )
-	reset()
 
 	while(!reachedEnd){
 		// To create a 3D cylinder, we will associate the U axis of the 2D mesh with the circumference of 
