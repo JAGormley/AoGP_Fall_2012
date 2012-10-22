@@ -1,7 +1,7 @@
 //mProfile radius is the radius of each ring
 //mTorusRadius is the radius of the circumfrance of the torus
-//subdivisionsU is the number of subdivisions aorund each circular profile
-//subdivisionsV is the number of profiles in the cylinder
+//subdivisionsU is the number of subdivisions around each circular profile
+//subdivisionsV is the number of profiles in the torus
 //stepA is to toggle between the direction in creating the Ribbon
 //deltaThetaU computes the angle between each vertex in a profile
 //deltaThetaV computes the angle between each profile
@@ -22,7 +22,7 @@ $( document ).ready( function(){
 	var torusContainer = Object.create( TriStripContainer )
 
 	while(!reachedEnd){
-		console.log(currV)
+
 		// We find our position along the circumference of the current profile by multiplying the angle of a 
 		// single step in the circular profile by the current index in the U axis (radial axis).
 		var thetaU = deltaThetaU * currU;

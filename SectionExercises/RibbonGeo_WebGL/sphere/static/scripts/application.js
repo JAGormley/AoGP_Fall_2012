@@ -1,14 +1,13 @@
-//mProfile radius is the radius of each ring
-//mTorusRadius is the radius of the circumfrance of the torus
-//subdivisionsU is the number of subdivisions aorund each circular profile
-//subdivisionsV is the number of profiles in the cylinder
+//mSphereRadius radius of the sphere
+//subdivisionsU is the number of points around each circular profile (longitude)
+//subdivisionsV is the number of profiles in the sphere (latitude)
 //stepA is to toggle between the direction in creating the Ribbon
 //deltaThetaU computes the angle between each vertex in a profile
 //deltaThetaV computes the angle between each profile
 //reachedEnd finalized the geometry
-var mProfileRadius = 50, mTorusRadius = 70, subdivisionsU = 40, subdivisionsV = 10, 
+var mSphereRadius = 100, subdivisionsU = 30, subdivisionsV = 30, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
-    deltaThetaU = Math.PI*2 / subdivisionsV, deltaThetaV = Math.PI*2 / subdivisionsU, reachedEnd = false
+    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, reachedEnd = false
  
 
 $( document ).ready( function(){
@@ -19,62 +18,32 @@ $( document ).ready( function(){
 	addControls()
 	window.group = new THREE.Object3D()
 
-	var torusContainer = Object.create( TriStripContainer )
+
+	var sphereContainer = Object.create( TriStripContainer )
 
 	while(!reachedEnd){
-		// We find our position along the circumference of the current profile by multiplying the angle of a 
-		// single step in the circular profile by the current index in the U axis (radial axis).
-		var thetaU = deltaThetaU * currU;
-		var thetaV = deltaThetaV * currV
+		// Find the current angle within the current longitudinal profile
+		var thetaU = deltaThetaU * currU
+		// Find the current angle within the latitudinal arc, 
+		// offseting by a quarter circle (HALF_PI) so that we start at the pole
+		// rather than the equator
+		var thetaV = deltaThetaV * currV - Math.PI/2
 
-		//calculate teh current pos along the circumfrence of the torus, this will be the center point of the current profile
-		var currProfileCenter = new THREE.Vector3( mTorusRadius * Math.cos( thetaV ), 0.0, mTorusRadius * Math.sin(thetaV) )
+		// Compute the current position on the surface of the sphere
+		var x = mSphereRadius * Math.cos( thetaV ) * Math.cos( thetaU )
+		var y = mSphereRadius * Math.cos( thetaV ) * Math.sin( thetaU )
+		var z = mSphereRadius * Math.sin( thetaV )
+		var currVert = new THREE.Vector3( x, y, z )
 
-		//compute the vector between the next profile center point and the current one
-		//no need to do anything with y, but am for the heck of it (will stay as 0 throughout)
-		var dirToNextCenter = new THREE.Vector3( currProfileCenter.x, currProfileCenter.y, currProfileCenter.z )
-		dirToNextCenter.x -= mTorusRadius * Math.cos( thetaV+deltaThetaV )
-		dirToNextCenter.y -= 0.0
-		dirToNextCenter.z -= mTorusRadius * Math.sin( thetaV+deltaThetaV )
-		//find length of vector
-		var dirToNextCenterLength = Math.sqrt( dirToNextCenter.x*dirToNextCenter.x + dirToNextCenter.y*dirToNextCenter.y + dirToNextCenter.z*dirToNextCenter.z)
-		dirToNextCenter.x /= dirToNextCenterLength //normalize it
-		dirToNextCenter.y /= dirToNextCenterLength
-		dirToNextCenter.z /= dirToNextCenterLength
-
-		//get the up axis for the plane upon which the current profile resides
-		//find this by taking the corss product of our vector between profiles centers and a vector traveling along the y-axis
-		//which is the axis of rotation for the placement of profile centers
-		var upVec = new THREE.Vector3( dirToNextCenter.x - 0.0, dirToNextCenter.y - 1.0, dirToNextCenter.z - 0.0 )
-		//find length of vector
-		var upVecLength = Math.sqrt( upVec.x*upVec.x + upVec.y*upVec.y + upVec.z*upVec.z)
-		upVec.x /= upVecLength //normalize it
-		upVec.y /= upVecLength
-		upVec.z /= upVecLength
-		upVec.x *= mProfileRadius //multiply the values
-		upVec.y *= mProfileRadius
-		upVec.z *= mProfileRadius
-
-		//comput ethe position of the current vertex on the prfile plane
-		//we can think of the rotateAroundAxis function as being like a clock
-		//upVec represents the direction of where the hour hand is pointing
-		//dirToNext represents the center pex which holds the clock hand in place
-		//when we turn this peg the hour hand rotates around the face of the clock
-		var currVert = rotateAroundAxis( upVec, dirToNextCenter, thetaU )
-		//now we need to position the current vertex in relation to the current prfiles center point
-		currVert.x += currProfileCenter.x
-		currVert.y += currProfileCenter.y
-		currVert.z += currProfileCenter.z
-		//add vertex to torus container
-		torusContainer.addVertex( currVert )
+		sphereContainer.addVertex( currVert )
 
 		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row
 		if( !stepA && ( ( goRight && currU == subdivisionsU ) || (!goRight && currU == 0 ) ) ){
 			goRight = !goRight
 
 			 // When turning around, we add the last point again as a pivot and reverse normal.
-			torusContainer.addVertex( currVert )
-			torusContainer.addVertex( currVert )
+			sphereContainer.addVertex( currVert )
+			sphereContainer.addVertex( currVert )
 
 			stepA = true; //reset to type A
 
@@ -102,8 +71,8 @@ $( document ).ready( function(){
 		stepA = !stepA
 	}
 
-	var torus = torusContainer.draw()
-	group.add( torus )
+	var sphere = sphereContainer.draw()
+	group.add( sphere )
 
 	scene.add(group)
 	loop()	

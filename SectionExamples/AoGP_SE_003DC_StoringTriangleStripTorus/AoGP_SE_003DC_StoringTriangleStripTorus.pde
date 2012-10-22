@@ -53,7 +53,7 @@ void setup() {
   size( 800, 600, OPENGL );
   
   // Set the number of subdivisions around each circular profile
-  subdivisionsU  = 10;
+  subdivisionsU  = 8;
   // Set the number of profiles in the torus
   subdivisionsV  = 40;
   
