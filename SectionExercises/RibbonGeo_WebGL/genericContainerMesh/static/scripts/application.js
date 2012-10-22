@@ -1,7 +1,3 @@
-var subDivisionsU = 3, subDivisionsV = 3, subDivLength = 100,
-currU = 0, currV = 0, goRight = true, stepA = true, reachedEnd = false
-
-
 $( document ).ready( function(){
 	if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
@@ -11,95 +7,138 @@ $( document ).ready( function(){
 	window.group = new THREE.Object3D()
 
 
- 	//single triangle
-	// var geom = new THREE.Geometry();
-	// geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
+	var meshPointsU = 20
+	var meshPointsV = 20
 
-	// geom.computeFaceNormals();
-	// geom.computeVertexNormals();
+	var mesh = Object.create( TMesh )
+	mesh.initMesh ( meshPointsU, meshPointsV )
 
-	// var mat = new THREE.MeshBasicMaterial({ color: 0xFF0000 });
-	// var ribbon = new THREE.Ribbon( geom, mat );
-	// scene.add( ribbon );
+	//side length for square mesh
+	var sideLength = 500
 
+	//set vertex position for mesh
+	for( var v = 0; v < meshPointsV; v++ ){
+		for( var u = 0; u < meshPointsU; u++ ){
 
-
- 	//two triangle
-	// var geom = new THREE.Geometry();
-	// geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, -100, 0 ) );
-
-	// geom.computeFaceNormals();
-	// geom.computeVertexNormals();
-
-	// var mat = new THREE.MeshBasicMaterial({ color: 0xFFFF00 });
-	// var ribbon = new THREE.Ribbon( geom, mat );
-	// scene.add( ribbon );
-
-
-
-	var meshContainer = Object.create( TriStripContainer )
-
-	while(!reachedEnd){
-		var currVert = new THREE.Vector3( currU, currV, 0 )
-		meshContainer.addVertex( currVert )
-
-		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row
-		if(!stepA && ( ( goRight && currU == subDivisionsU * subDivLength ) || (!goRight && currU == 0) )){
-			goRight = !goRight
-			
-			//create degenerate triangle (needs two points to fully turn around)
-			meshContainer.addVertex( currVert )
-			meshContainer.addVertex( currVert )
-
-			stepA = true //reset to step type A
-			goRight != goRight //alternate between row types
-
-			reachedEnd = (currV == subDivisionsV * subDivLength ) //will return false until last vertice
+			//get 1D index for current vertex
+			var i = v * meshPointsU + u
+			//get the vertex from mesh
+			var currVert = Object.create( Vert )
+			currVert = mesh.getVertex( i )
+			//get its uv's (this will be mapped to 0.0,1.0 in each axis)
+			var currUV = new THREE.Vector3( currVert.getUV() )
+			//multiply by the square's side length
+			var cPos = new THREE.Vector3( currUV.x * sideLength, currUV.y * sideLength, 0.0 )
+			currVert.setPosition( cPos )
 		}
-
-	    // For rightward rows (goRight):
-	    //   A  C
-	    //   | /
-	    //   B
-	    
-	    // For leftward rows (!goRight):
-	    //   C  A
-	    //    \ |
-	    //      B
-		if(goRight){
-			if(stepA){
-				currV += subDivLength
-			}else{
-				currU += subDivLength
-				currV -= subDivLength
-			}
-		}else{
-			if(stepA){
-				currV += subDivLength
-			}else{
-				currU -= subDivLength
-				currV -= subDivLength
-			}
-		}
-		
-		stepA = !stepA //alternate between step types
 	}
 
-	var mesh = meshContainer.draw()
-	mesh.position.x = subDivisionsU * -subDivLength / 2 //center mesh
-	mesh.position.y = subDivisionsV * -subDivLength / 2 //center mesh
-	group.add(mesh)
+	var m = mesh.draw()
+	group.add( m )
+
+
+
+	// var mesh = meshContainer.draw()
+	// mesh.position.x = subDivisionsU * -subDivLength / 2 //center mesh
+	// mesh.position.y = subDivisionsV * -subDivLength / 2 //center mesh
+	// group.add(mesh)
 
 
 
 	scene.add(group)
 	loop()	
 })
+
+
+var NodeBase{
+	mName : "untitled",
+	mParent : null,
+	mChildren : [],
+	mVisibility : true,
+
+	setName : function( iName ){
+		this.mName = iName
+	},
+
+	getName : function(){
+		return this.mName
+	},
+
+	addChild : function( iChild ){
+		iChild.setParent( this )
+		this.mChildren.push( iChild )
+	},
+
+	removeChild : function( iIndex ){
+		if( iIndex >= 0 && iIndex < this.mChildren.length-1 ){
+			this.mChildren[iIndex].setParent( null )
+			this.mChildren.splice( iIndex, 1 )
+		}
+	},
+
+	getChild : function( iIndex ){
+		if( iIndex >= 0 && iIndex < this.mChildren.length-1 ){
+			return this.mChildren[iIndex]
+		}
+	},
+
+	getChildCount : function(){
+		return this.mChildren.length-1
+	},
+
+	setParent : function( iParent ){
+		this.mParent = iParent
+	},
+
+	getParent : function(){
+		return this.mParent
+	},
+
+	isRootNode : function(){
+		return (this.mParent == null)
+	},
+
+	getRootNode : function(){
+		if( isRootNode() ){
+			return this
+		}else{
+			return this.mParent.getRootNode()
+		}
+	},
+
+	getVisibility : function(){
+		return this.mVisibility
+	},
+
+	getParentVisibility : function(){
+		if( isRootNode() ){
+			return mVisibility
+		}else{
+			return (mParent.getVisibility() && mVisibility )
+		}
+	},
+
+	setVisibility : function( iVisibility ){
+		this.mVisibility = iVisibility
+	},
+
+	toggleVisibility : function(){
+		this.mVisibility = !this.mVisibility
+	},
+
+	print : function( iIndent ){
+		if( getVisibility() ){
+			var indent = "  "
+			var len = indent.length * iIndent
+			console.log( indent + this.mName ) //node info string
+			var tChildCount = this.getChildCount()
+			for ( var i = 0; i < tChildCount; i++ ){
+				this.mChildren[i].print( iIndent + 1 )
+			}
+		}
+	}
+
+}
 
 var TriStripContainer = {
 	mVertices : [],
