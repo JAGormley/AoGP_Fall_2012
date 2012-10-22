@@ -6,9 +6,9 @@
 //deltaThetaU computes the angle between each vertex in a profile
 //deltaThetaV computes the angle between each profile
 //reachedEnd finalized the geometry
-var mProfileRadius = 50, mTorusRadius = 70, subdivisionsU = 20, subdivisionsV = 40, 
+var mProfileRadius = 50, mTorusRadius = 70, subdivisionsU = 40, subdivisionsV = 10, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
-    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, reachedEnd = false
+    deltaThetaU = Math.PI*2 / subdivisionsV, deltaThetaV = Math.PI*2 / subdivisionsU, reachedEnd = false
  
 
 $( document ).ready( function(){
@@ -22,7 +22,6 @@ $( document ).ready( function(){
 	var torusContainer = Object.create( TriStripContainer )
 
 	while(!reachedEnd){
-		console.log(currV)
 		// We find our position along the circumference of the current profile by multiplying the angle of a 
 		// single step in the circular profile by the current index in the U axis (radial axis).
 		var thetaU = deltaThetaU * currU;
@@ -81,7 +80,7 @@ $( document ).ready( function(){
 
 			//if we're at the end of a row on a step b move to the final colum,
 			//then we add the last vertex in the mesh
-			reachedEnd = (currV == subdivisionsV )
+			reachedEnd = (currV == subdivisionsV * (subdivisionsU/10) )
 		}
 
 		if( goRight ){
