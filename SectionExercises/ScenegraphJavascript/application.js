@@ -1,7 +1,10 @@
 $( document ).ready( function(){
 
 	// var root = Object.create( NodeBase )
-	// NodeBase.prototype = Object.create( NodeGeom )
+	// NodeBase.prototype.nodeGeom = function Cat(args){ this.name = args}
+	// Object.create( NodeGeom )
+
+	// new Cat('sox')
 	// NodeBase.prototype.NodeGeom = Object.create( NodeGeom )
 	// NodeBase.prototype.NodeGeom = new NodeGeom
 
@@ -9,18 +12,35 @@ $( document ).ready( function(){
 	// Class.prototype.constructor = Class;
 	// Class.extend = arguments.callee;
 
-	// var root = Object.create( NodeGeom )
-	// root.setName( "root" )
-	// root.setColor("0xFF0000")
-	// root.setType(0)
 
-	// var childA = Object.create( NodeGeom )
-	// childA.setName("childA")
-	// childA.setColor("0x000000")
-	// childA.setType(1)
+
+	//this is what I want to do - setName is a property of 
+	//NodeBase though -- trying to figure out how to access this
+	var root = Object.create( NodeGeom )
+	root.setName( "root" )
+	root.setColor("0xFF0000")
+	root.setType(0)
+
+	var childA = Object.create( NodeGeom )
+	childA.setName("childA")
+	childA.setColor("0x000000")
+	childA.setType(1)
+
+
+
+	// var extend = function(inherit, base){
+	// 	for (var prop in base){
+	// 		inherit[prop] = base[prop];
+	// 	}
+	// }
+	// extend(NodeGeom,NodeBase);
+
+
+
+ // /	BaseClass.prototype = Object.create( NodeBase )
+
+
 })
-
-
 
 
 
@@ -201,5 +221,4 @@ var NodeBase = {
 		}
 	}
 }
-
 
