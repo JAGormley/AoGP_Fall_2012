@@ -29,10 +29,6 @@ $( document ).ready( function(){
 			childA.toggleVisibility()
 		}
 	}, 2000)
-	
-
-
- // /	BaseClass.prototype = Object.create( NodeBase )
 
 
 })
