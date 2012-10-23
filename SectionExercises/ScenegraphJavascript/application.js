@@ -1,13 +1,12 @@
 $( document ).ready( function(){
 	// var extend = function(inherit, base){
 	// 	for (var prop in base){
-	// 		inherit[prop] = base[prop];
+	// 		inherit[prop] = base[prop]
 	// 	}
 	// }
-	// extend(NodeGeom,NodeBase);
+	// extend(NodeGeom,NodeBase)
 
-	$.extend(NodeGeom, NodeBase);
-
+	$.extend(NodeGeom, NodeBase)
 
 	var root = Object.create( NodeGeom )
 	root.setName( "root" )
@@ -138,14 +137,14 @@ var NodeBase = {
 	},
 
 	removeChild : function( iIndex ){
-		if( iIndex >= 0 && iIndex < this.mChildren.length-1 ){
+		if( iIndex >= 0 && iIndex < this.mChildren.length ){
 			this.mChildren[iIndex].setParent( null )
 			this.mChildren.splice( iIndex, 1 )
 		}
 	},
 
 	getChild : function( iIndex ){
-		if( iIndex >= 0 && iIndex < this.mChildren.length-1 ){
+		if( iIndex >= 0 && iIndex < this.mChildren.length ){
 			return this.mChildren[iIndex]
 		}
 	},
