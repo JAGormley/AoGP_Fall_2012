@@ -29,10 +29,12 @@ $( document ).ready( function(){
 			var currVert = Object.create( Vert )
 			currVert = mesh.getVertex( i )
 			//get its uv's (this will be mapped to 0.0,1.0 in each axis)
+			if(i < 399)
 			var currUV = currVert.getUV()
+			// console.log(currUV)
 			//multiply by the square's side length
-			var cPos = new THREE.Vector3( currUV.x * sideLength, currUV.y * sideLength, 0.0 )
-			currVert.setPosition( cPos )
+			// var cPos = new THREE.Vector3( currUV.x * sideLength, currUV.y * sideLength, 0.0 )
+			// currVert.setPosition( cPos )
 		}
 	}
 
@@ -80,7 +82,7 @@ var Vert = {
 	},
 
 	getUV : function(){
-		console.log("getUV")
+		console.log(this.mUV)
 		return this.mUV
 	}
 }
@@ -252,6 +254,7 @@ var TMesh = {
 			for( var u = 0; u < iDimensionU; u++ ){
 				var cVert = Object.create(Vert)
 				cVert.setUV( u/(iDimensionU -1), v/(iDimensionV - 1) )
+				// console.log (u/(iDimensionU -1) + " " + v/(iDimensionV - 1))
 				this.mVertices.push( cVert )
 			}
 		}
