@@ -13,7 +13,7 @@ $( document ).ready( function(){
 	// var mesh = new RibbonCylinder(100, 200, 40, 10) //subdivisions u, v and length of each subdivision
 	// group.add(mesh)
 
-	// var mesh = new RibbonSphere(100, 30, 30)
+	// var mesh = new RibbonSphere(100, 32, 32)
 	// group.add(mesh)
 
 	// var mesh = new RibbonTorus()
@@ -70,11 +70,11 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 	var meshContainer = new TriStripContainer()
 
 	while(!reachedEnd){
-		var currVert = new THREE.Vector3( currU, currV, 0 )
+		var currVert = new THREE.Vector3( currU *subDivLength, currV *subDivLength, 0 )
 		meshContainer.addVertex( currVert )
 
 		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row
-		if(!stepA && ( ( goRight && currU == subDivisionsU * subDivLength ) || (!goRight && currU == 0) )){
+		if(!stepA && ( ( goRight && currU == subDivisionsU ) || (!goRight && currU == 0) )){
 			goRight = !goRight
 			
 			//create degenerate triangle (needs two points to fully turn around)
@@ -84,7 +84,7 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 			stepA = true //reset to step type A
 			goRight != goRight //alternate between row types
 
-			reachedEnd = (currV == subDivisionsV * subDivLength ) //will return false until last vertice
+			reachedEnd = (currV == subDivisionsV ) //will return false until last vertice
 		}
 
 	    // For rightward rows (goRight):
@@ -98,17 +98,17 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 	    //      B
 		if(goRight){
 			if(stepA){
-				currV += subDivLength
+				currV ++
 			}else{
-				currU += subDivLength
-				currV -= subDivLength
+				currU ++
+				currV --
 			}
 		}else{
 			if(stepA){
-				currV += subDivLength
+				currV ++
 			}else{
-				currU -= subDivLength
-				currV -= subDivLength
+				currU --
+				currV --
 			}
 		}
 		
@@ -125,7 +125,7 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 
 var RibbonCylinder = function(radius, length, subdivU, subDivV){
 	var mProfileRadius = radius, mCylinderLen = length, subdivisionsU = subdivU, subdivisionsV = subDivV, 
-    currU = 0, currV = 0, goRight = true, stepA = true, deltaThetaU = Math.PI*2 / subdivisionsU, 
+    currU = 0, currV = 0, goRight = true, stepA = true, deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI / subdivisionsV
     reachedEnd = false
 
 	var cylinderContainer = new TriStripContainer()
@@ -197,7 +197,7 @@ var RibbonCylinder = function(radius, length, subdivU, subDivV){
 var RibbonSphere = function(radius, subU, subV){
 	var mSphereRadius = radius, subdivisionsU = subU, subdivisionsV = subV, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
-    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, reachedEnd = false
+    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI / subdivisionsV, reachedEnd = false
 
 
 	var sphereContainer = new TriStripContainer()
@@ -230,7 +230,7 @@ var RibbonSphere = function(radius, subU, subV){
 
 			//if we're at the end of a row on a step b move to the final colum,
 			//then we add the last vertex in the mesh
-			reachedEnd = (currV == subdivisionsV * (subdivisionsU/10) )
+			reachedEnd = (currV == subdivisionsV)
 		}
 
 		if( goRight ){

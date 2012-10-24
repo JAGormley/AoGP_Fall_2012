@@ -11,45 +11,14 @@ $( document ).ready( function(){
 	window.group = new THREE.Object3D()
 
 
- 	//single triangle
-	// var geom = new THREE.Geometry();
-	// geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
-
-	// geom.computeFaceNormals();
-	// geom.computeVertexNormals();
-
-	// var mat = new THREE.MeshBasicMaterial({ color: 0xFF0000 });
-	// var ribbon = new THREE.Ribbon( geom, mat );
-	// scene.add( ribbon );
-
-
-
- 	//two triangle
-	// var geom = new THREE.Geometry();
-	// geom.vertices.push( new THREE.Vector3( -100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( -100, -100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, 100, 0 ) );
-	// geom.vertices.push( new THREE.Vector3( 100, -100, 0 ) );
-
-	// geom.computeFaceNormals();
-	// geom.computeVertexNormals();
-
-	// var mat = new THREE.MeshBasicMaterial({ color: 0xFFFF00 });
-	// var ribbon = new THREE.Ribbon( geom, mat );
-	// scene.add( ribbon );
-
-
-
 	var meshContainer = Object.create( TriStripContainer )
 
 	while(!reachedEnd){
-		var currVert = new THREE.Vector3( subDivLength * currU, subDivLength * currV, 0 )
+		var currVert = new THREE.Vector3( currU, currV, 0 )
 		meshContainer.addVertex( currVert )
 
 		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row
-		if(!stepA && ( ( goRight && currU == subDivisionsU ) || (!goRight && currU == 0) )){
+		if(!stepA && ( ( goRight && currU == subDivisionsU * subDivLength ) || (!goRight && currU == 0) )){
 			goRight = !goRight
 			
 			//create degenerate triangle (needs two points to fully turn around)
@@ -59,7 +28,7 @@ $( document ).ready( function(){
 			stepA = true //reset to step type A
 			goRight != goRight //alternate between row types
 
-			reachedEnd = (currV == subDivisionsV) //will return false until last vertice
+			reachedEnd = (currV == subDivisionsV * subDivLength ) //will return false until last vertice
 		}
 
 	    // For rightward rows (goRight):
@@ -73,17 +42,17 @@ $( document ).ready( function(){
 	    //      B
 		if(goRight){
 			if(stepA){
-				currV ++
+				currV += subDivLength
 			}else{
-				currU ++
-				currV --
+				currU += subDivLength
+				currV -= subDivLength
 			}
 		}else{
 			if(stepA){
-				currV ++
+				currV += subDivLength
 			}else{
-				currU --
-				currV --
+				currU -= subDivLength
+				currV -= subDivLength
 			}
 		}
 		
@@ -131,8 +100,10 @@ var TriStripContainer = {
 			var currVert = this.mVertices[i]
 			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
 		}
-
-		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+		// geom.faces.push( new THREE.Face3(0,1,2) )
+		// geom.computeFaceNormals()
+		
+		var ribbon = new THREE.Ribbon( geom, new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false, side: THREE.DoubleSide } ) ); //vertexColors: true,
 		return ribbon
 	}
 

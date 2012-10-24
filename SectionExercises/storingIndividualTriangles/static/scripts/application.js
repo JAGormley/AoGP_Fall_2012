@@ -43,7 +43,7 @@ $( document ).ready( function(){
 	window.cubeMaterial0 = new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false, side: THREE.DoubleSide } );
 	
 	
-	//drawwing a single triangle
+	//drawing a single triangle
 	// var geometry = new THREE.Geometry();
 	// geometry.vertices.push( new THREE.Vector3( -100, 100, 0 ) ); 
 	// geometry.vertices.push( new THREE.Vector3( -100, -100, 0 ) ); 

@@ -5,9 +5,9 @@
 //deltaThetaU computes the angle between each vertex in a profile
 //deltaThetaV computes the angle between each profile
 //reachedEnd finalized the geometry
-var mSphereRadius = 100, subdivisionsU = 30, subdivisionsV = 30, 
+var mSphereRadius = 100, subdivisionsU = 32, subdivisionsV = 32, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
-    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, reachedEnd = false
+    deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI / subdivisionsV, reachedEnd = false
  
 
 $( document ).ready( function(){
@@ -49,7 +49,7 @@ $( document ).ready( function(){
 
 			//if we're at the end of a row on a step b move to the final colum,
 			//then we add the last vertex in the mesh
-			reachedEnd = (currV == subdivisionsV * (subdivisionsU/10) )
+			reachedEnd = (currV == subdivisionsV )
 		}
 
 		if( goRight ){
