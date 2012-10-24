@@ -70,7 +70,7 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 	var meshContainer = new TriStripContainer()
 
 	while(!reachedEnd){
-		var currVert = new THREE.Vector3( currU *subDivLength, currV *subDivLength, 0 )
+		var currVert = new THREE.Vector3( currU * subDivLength, currV * subDivLength, 0 )
 		meshContainer.addVertex( currVert )
 
 		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row

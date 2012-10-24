@@ -45,7 +45,7 @@ $( document ).ready( function(){
 	var meshContainer = Object.create( TriStripContainer )
 
 	while(!reachedEnd){
-		var currVert = new THREE.Vector3( subDivLength * currU, subDivLength * currV, 0 )
+		var currVert = new THREE.Vector3( currU * subDivLength, currV * subDivLength, 0 )
 		meshContainer.addVertex( currVert )
 
 		// check if we hit a column ending on the left or right of the mesh -if so turn around and jump to the next row
