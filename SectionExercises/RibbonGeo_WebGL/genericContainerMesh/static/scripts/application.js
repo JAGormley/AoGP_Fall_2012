@@ -29,7 +29,7 @@ $( document ).ready( function(){
 			var currVert = Object.create( Vert )
 			currVert = mesh.getVertex( i )
 			//get its uv's (this will be mapped to 0.0,1.0 in each axis)
-			var currUV = new THREE.Vector3( currVert.getUV() )
+			var currUV = currVert.getUV()
 			//multiply by the square's side length
 			var cPos = new THREE.Vector3( currUV.x * sideLength, currUV.y * sideLength, 0.0 )
 			currVert.setPosition( cPos )
@@ -55,7 +55,7 @@ $( document ).ready( function(){
 
 
 var Vert = {
-	mPosition : new THREE.Vector3( 0.0, 0.0, 0.0 ),
+	mPosition : {x: 0.0, y: 0.0, z: 0.0},
 	mUV : {x: 0.0, y: 0.0},
 	mTriangleSet : [],
 
@@ -74,11 +74,13 @@ var Vert = {
 	},
 
 	setUV : function( iU, iV ){
+		console.log("setUV")
 		this.mUV.x = iU
 		this.mUV.y = iV
-	}
+	},
 
 	getUV : function(){
+		console.log("getUV")
 		return this.mUV
 	}
 }
@@ -88,10 +90,10 @@ var Tri = {
 	mVertexIndices : [],
 
 	max : function( a, b ){
-		if (a > b) ? return a : return b
+		return a > b ?  a : b
 	},
 	min : function( a, b ){
-		if (a < b) ? return a : return b
+		return a < b ? a : b
 	},
 
 	setVertices : function( iVA, iVB, iVC ){
@@ -130,8 +132,8 @@ var Tri = {
 		return this.mVertexIndices[ iVertexNumber ]
 	},
 	generate : function( iVA, iVB, iVC, iA, iB, iC ){
-		setVertices( iVA, IVB, IVC )
-		setIndices( iA, iB, iC )
+		this.setVertices( iVA, iVB, iVC )
+		this.setIndices( iA, iB, iC )
 	}
 }
 
@@ -146,21 +148,28 @@ var TMesh = {
 	mTriangles : [],
 	mTriStrip : [],
 
-	mDrawMode : TRISTRIP_MODE,
+	mDrawMode : this.TRISTRIP_MODE,
 
 	drawContents : function(){
 		//DRAW TRIANGLE STRIPS
-		if(mDrawMode == TRISTRIP_MODE){
+		if(this.mDrawMode == this.TRISTRIP_MODE){
 			var tsCount = this.mTriStrip.length
 
+			//creat three.js object
+			var meshContainer = Object.create( NodeGeom )
+
 			for( var i=0; i < tsCount; i++ ){
-				var cVert = this.mVertices[ this.mTriStrip[i] ] //***
-				//***missing part of creating triangle object
+				var cVert = this.mVertices[ this.mTriStrip[i] ] 
+				//set the vertex position
+				meshContainer.addVertex( cVert.mPosition.x, cVert.mPosition.y, cVert.mPosition.z )
+				console.log(i)
 			}
+
+			return meshContainer.draw()
 		}
 
 		//DRAW TRIANGLES
-		if(mDrawMode == TRIANGLE_MODE){
+		if(this.mDrawMode == this.TRIANGLE_MODE){
 			var triCount = this.mTriangles.length
 
 			for( var i=0; i < triCount; i++ ){
@@ -174,7 +183,7 @@ var TMesh = {
 		}
 
 		//DRAW POINTS
-		if(mDrawMode == POINT_MODE){
+		if(this.mDrawMode == this.POINT_MODE){
 			var tsCount = this.mTriStrip.length
 
 			for( var i=0; i < tsCount; i++ ){
@@ -201,7 +210,7 @@ var TMesh = {
 	},
 
 	getVertexCount : function(){
-		return mVertices.length
+		return this.mVertices.length
 	},
 
 	getTriangleCount : function(){
@@ -221,7 +230,7 @@ var TMesh = {
 	},
 
 	max : function( a, b ){
-		if (a > b) ? return a : return b
+		return a > b ? a : b
 	},
 
 	initMesh : function( iDimensionU, iDimensionV ){
@@ -238,17 +247,137 @@ var TMesh = {
 		this.dimensionsU = iDimensionU
 		this.dimensionsV = iDimensionV
 
-		//initialize vertice and setup th mesh UV coordinates
-		for( var v = 0; v< iDimensionV; v++ ){
-			for( var u = 0; u< iDimensionU; u++ ){
-				//*** missing code here
+		//initialize vertices and setup the mesh UV coordinates
+		for( var v = 0; v < iDimensionV; v++ ){
+			for( var u = 0; u < iDimensionU; u++ ){
+				var cVert = Object.create(Vert)
+				cVert.setUV( u/(iDimensionU -1), v/(iDimensionV - 1) )
+				this.mVertices.push( cVert )
 			}
 		}
 
 		//setup subdivisions (triangles and triangle strip)
-	},
+		for( var v = 0; v < iDimensionV-1; v++ ){
+			//determine the direction of the current row
+			var goingRight = (v % 2 == 0)
+
+			//find the indice for the first and last column of the row
+			var firstCol = 0
+			var lastCol = iDimensionU - 1
+
+			//get the current column index, direction dependnt
+			var u = (goingRight) ? firstCol : lastCol
+
+			//iterate over each column in the row
+			var rowComplete = false
+			while(!rowComplete){
+				//for each column determine the indices of the current rect subdivision
+				//this depends on whether we're going right or left in the current row
+				var iA, iB, iC, iD
+				if( goingRight ){
+					//rightward triangles go abc, bcd
+					//a  c
+					//b  d
+
+					//get the four indeces of the current subdivision
+					iA = v * iDimensionU + u
+					iB = (v + 1) * iDimensionU + u
+					iC = v * iDimensionU + (u + 1)
+					iD = (v + 1) * iDimensionU + (u + 1)
+
+					//add the two triangles to the current subdivision
+					var iABC = Object.create(Tri)
+					iABC.generate( this.mVertices[ iA ], this.mVertices[ iB ], this.mVertices[ iC ], iA, iB, iC )
+					this.mTriangles.push( iABC )
+
+					var iBCD = Object.create(Tri)
+					iBCD.generate( this.mVertices[ iB ], this.mVertices[ iC ], this.mVertices[ iD ], iB, iC, iD )
+					this.mTriangles.push( iBCD )
+				}else{
+					//leftward triangles abc, bcd
+					//c  a
+					//d  b
+
+					//get the four indeces of the current subdivision
+					iA = v * iDimensionU + u
+					iB = (v + 1) * iDimensionU + u
+					iC = v * iDimensionU + (u - 1)
+					iD = (v + 1) * iDimensionU + (u - 1)
+
+					var iABC = Object.create(Tri)
+					iABC.generate( this.mVertices[ iA ], this.mVertices[ iB ], this.mVertices[ iC ], iA, iB, iC )
+					this.mTriangles.push( iABC )
+
+					var iBCD = Object.create(Tri)
+					iBCD.generate( this.mVertices[ iB ], this.mVertices[ iC ], this.mVertices[ iD ], iB, iC, iD )
+					this.mTriangles.push( iBCD )
+				}
+				//add the four indices of the current subdivision to tri strip
+				this.mTriStrip.push( iA )
+				this.mTriStrip.push( iB )
+				this.mTriStrip.push( iC )
+				this.mTriStrip.push( iD )
+
+				//iterate through each colum in the row, direction depend
+				if( goingRight ){
+					u++
+				}else{
+					u--
+				}
+
+				//check weather we've reached the end of the row
+				if( ( goingRight && u == lastCol ) || (!goingRight && u == firstCol ) ){
+					//add the degenerate triangles
+					this.mTriStrip.push( iD )
+					this.mTriStrip.push( iD )
+
+					//prepare to exit row
+					rowComplete = true
+				}
+			}
+		}
+
+	}
 
 }
+
+var TriStripContainer = {
+	mVertices : [],
+
+	clear : function(){
+		this.mVertices = [] //clear the array
+	},
+
+	addVertex : function(iVert){
+		this.mVertices.push(iVert)
+	},
+
+	getVertex : function(iIndex){
+		if( iIndex >= 0 && iIndex < this.getVertexCount() ){
+			return this.mVertices[iIndex]
+		}
+		return null
+	},
+
+	getVertexCount : function(){
+		return this.mVertices.length-1
+	},
+
+	draw : function(){
+		var vertCount = this.getVertexCount(); //get vertex count
+		var geom = new THREE.Geometry();  //create geometry
+
+		for(var i = 0; i < vertCount; i++){
+			var currVert = this.mVertices[i]
+			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
+		}
+
+		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+		return ribbon
+	}
+
+}
+
 
 var NodeGeom = {
 	mPosition : {x: 0, y: 0, z: 0},
@@ -257,78 +386,99 @@ var NodeGeom = {
 	mColor : "0xFFFFFF",
 	mType : 0, //add method setType to determine what is being drawn
 
-	draw : function(){
-		if( getVisibility() ){
+	// draw : function(){
+	// 	// if( this.getVisibility() ){
 
-			drawGeom( mType )
+	// 		// //draw node contents
+	// 		// this.drawContents()
+	// 		// console.log("test")
+	// 		// //draw children
+	// 		// var tChildCount = this.getChildCount();
+	// 		// for(var i = 0; i < tChildCount; i++){
+	// 		// 	getChild(i).draw();
+	// 		// }
+	// 	// }
+	// 	var vertCount = this.getVertexCount(); //get vertex count
+	// 	var geom = new THREE.Geometry();  //create geometry
 
-			var tChildCount = getChildCount();
-			for(var i = 0; i < tChildCount; i++){
-				var tmpColor = getChild(i).getColor()
-				var tmpType = getChild(i).getType();
-				getChild(i).draw();
-			}
-		}
+	// 	for(var i = 0; i < vertCount; i++){
+	// 		var currVert = this.mVertices[i]
+	// 		geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
+	// 	}
+	// 	var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+	// 	return ribbon
+	// },
+	mVertices : [],
+
+	clear : function(){
+		this.mVertices = [] //clear the array
 	},
 
-	getType : function(){
-		return this.mType
+	addVertex : function(iVert){
+		this.mVertices.push(iVert)
+	},
+
+	getVertex : function(iIndex){
+		if( iIndex >= 0 && iIndex < this.getVertexCount() ){
+			return this.mVertices[iIndex]
+		}
+		return null
+	},
+
+	getVertexCount : function(){
+		return this.mVertices.length-1
+	},
+
+	draw : function(){
+		var vertCount = this.getVertexCount(); //get vertex count
+		var geom = new THREE.Geometry();  //create geometry
+
+		for(var i = 0; i < vertCount; i++){
+			var currVert = this.mVertices[i]
+			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
+		}
+
+		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+		return ribbon
 	},
 
 	getPosition : function(){
-		return this.mPosition
+		return this.mPosition //need to hook this into three.js
 	},
 
 	getRotation : function(){
-		return this.mRotation
+		return this.mRotation //need to hook this into three.js
 	},
 
 	getScale : function(){
-		return this.mScale
+		return this.mScale //need to hook this into three.js
 	},
 
 	getColor : function(){
-		return this.mColor
+		return this.mColor //need to hook this into three.js
 	},
 
-	setType : function( iValue ){
-		this.mType = iValue
-	},
-
-	setPosition : function( iValue ){
+	setPosition : function( iValue ){ //need to hook this into three.js
 		this.mPosition.x = iValue.x
 		this.mPosition.y = iValue.y
 		this.mPosition.z = iValue.z
 	},
 
-	setRotation : function( iValue ){
+	setRotation : function( iValue ){ //need to hook this into three.js
 		this.mRotation.x = iValue.x
 		this.mRotation.y = iValue.y
 		this.mRotation.z = iValue.z
 	},
 
-	setScale : function( iValue ){
+	setScale : function( iValue ){ //need to hook this into three.js
 		this.mScale.x = iValue.x
 		this.mScale.y = iValue.y
 		this.mScale.z = iValue.z
 	},
 
-	setColor : function( iColor ){
+	setColor : function( iColor ){ //need to hook this into three.js
 		this.mColor = iColor
 	},
-
-	drawGeom : function( iType ){
-		if( this.mType = 0 ){
-			console.log("insert draw mType 0 here")
-		}
-		if( this.mType = 1 ){
-			console.log("insert draw mType 1 here")
-		}
-		if( this.mType = 2 ){
-			console.log("insert draw mType 2 here")
-		}
-	}
-
 }
 
 
@@ -426,7 +576,7 @@ var NodeBase = {
 				}
 			}
 		}
-	}
+	},
 }
 
 
