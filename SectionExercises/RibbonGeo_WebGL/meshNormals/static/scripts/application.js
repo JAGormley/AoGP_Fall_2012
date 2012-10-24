@@ -99,11 +99,12 @@ var TriStripContainer = {
 		for(var i = 0; i < vertCount; i++){
 			var currVert = this.mVertices[i]
 			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
+			// geom.faces.push( new THREE.Face3(0,1,2) );
+			// geom.computeFaceNormals()
 		}
-		// geom.faces.push( new THREE.Face3(0,1,2) )
-		// geom.computeFaceNormals()
+
 		
-		var ribbon = new THREE.Ribbon( geom, new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false, side: THREE.DoubleSide } ) ); //vertexColors: true,
+		var ribbon = new THREE.Ribbon( geom, new THREE.MeshPhongMaterial( { wireframe: false, transparency: true, opacity: 1, ambient: 0xFF00, color: 0xFFA01F, specular: 0xFFFFFF, shininess: 25, perPixel: true,  metal: false, side: THREE.DoubleSide } ) );
 		return ribbon
 	}
 

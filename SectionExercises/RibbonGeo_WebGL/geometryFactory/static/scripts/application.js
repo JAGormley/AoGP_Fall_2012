@@ -10,12 +10,15 @@ $( document ).ready( function(){
 	var mesh = new RibbonMesh(3, 3, 100) //subdivisions u, v and length of each subdivision
 	group.add(mesh)
 	
+	//draw cylinder
 	// var mesh = new RibbonCylinder(100, 200, 40, 10) //subdivisions u, v and length of each subdivision
 	// group.add(mesh)
 
+	//draw sphere
 	// var mesh = new RibbonSphere(100, 32, 32)
 	// group.add(mesh)
 
+	//draw torus
 	// var mesh = new RibbonTorus()
 	// group.add(mesh)	
 
