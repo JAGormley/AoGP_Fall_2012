@@ -99,8 +99,8 @@ var TriStripContainer = {
 		for(var i = 0; i < vertCount; i++){
 			var currVert = this.mVertices[i]
 			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
-			// geom.faces.push( new THREE.Face3(0,1,2) );
-			// geom.computeFaceNormals()
+			geom.faces.push( new THREE.Face3(0,1,2) );
+			geom.computeFaceNormals()
 		}
 
 		

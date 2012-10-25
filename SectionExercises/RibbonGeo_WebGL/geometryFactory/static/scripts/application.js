@@ -7,20 +7,20 @@ $( document ).ready( function(){
 	window.group = new THREE.Object3D()
 
 	//draw mesh
-	var mesh = new RibbonMesh(3, 3, 100) //subdivisions u, v and length of each subdivision
-	group.add(mesh)
+	// var mesh = new RibbonMesh(3, 3, 100) //subdivisions u, v and length of each subdivision
+	// group.add(mesh)
 	
 	//draw cylinder
 	// var mesh = new RibbonCylinder(100, 200, 40, 10) //subdivisions u, v and length of each subdivision
 	// group.add(mesh)
 
 	//draw sphere
-	// var mesh = new RibbonSphere(100, 32, 32)
+	// var mesh = new RibbonSphere(100, 32, 32) //radius, subdivU, subdivV
 	// group.add(mesh)
 
 	//draw torus
-	// var mesh = new RibbonTorus()
-	// group.add(mesh)	
+	var mesh = new RibbonTorus(50, 70, 20, 40) //profile radius, radius, subdivU, subdivV
+	group.add(mesh)	
 
 
 	scene.add(group)
@@ -261,7 +261,7 @@ var RibbonSphere = function(radius, subU, subV){
 
 
 
-var RibbonTorus = function(){
+var RibbonTorus = function(profileRadius, radius, subDivU, subDivV){
 	var rotateAroundAxis = function(vec, a , t){
 		var s = Math.sin(t)
 		var c = Math.cos(t)
@@ -274,7 +274,7 @@ var RibbonTorus = function(){
 		return out
 	}
 
-	var mProfileRadius = 50, mTorusRadius = 70, subdivisionsU = 20, subdivisionsV = 40, 
+	var mProfileRadius = profileRadius, mTorusRadius = radius, subdivisionsU = subDivU, subdivisionsV = subDivV, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
     deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, 
     reachedEnd = false
