@@ -7,20 +7,20 @@ $( document ).ready( function(){
 	window.group = new THREE.Object3D()
 
 	//draw mesh
-	// var mesh = new RibbonMesh(3, 3, 100) //subdivisions u, v and length of each subdivision
-	// group.add(mesh)
+	var mesh = new RibbonMesh(3, 3, 100, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ) //subdivisions u, v and length of each subdivision
+	group.add(mesh)
 	
 	//draw cylinder
-	// var mesh = new RibbonCylinder(100, 200, 40, 10) //subdivisions u, v and length of each subdivision
+	// var mesh = new RibbonCylinder(100, 200, 40, 10, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ) //subdivisions u, v and length of each subdivision
 	// group.add(mesh)
 
 	//draw sphere
-	// var mesh = new RibbonSphere(100, 32, 32) //radius, subdivU, subdivV
+	// var mesh = new RibbonSphere(100, 32, 32, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ) //radius, subdivU, subdivV
 	// group.add(mesh)
 
 	//draw torus
-	var mesh = new RibbonTorus(50, 70, 20, 40) //profile radius, radius, subdivU, subdivV
-	group.add(mesh)	
+	// var mesh = new RibbonTorus(50, 70, 20, 40, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ) //profile radius, radius, subdivU, subdivV
+	// group.add(mesh)	
 
 
 	scene.add(group)
@@ -29,7 +29,7 @@ $( document ).ready( function(){
 
 
 //triangle strip base container
-var TriStripContainer = function(){
+var TriStripContainer = function(material){
 	this.mVertices = []
 
 	this.clear = function(){
@@ -60,17 +60,17 @@ var TriStripContainer = function(){
 			geom.vertices.push( new THREE.Vector3( currVert.x, currVert.y, currVert.z ) );
 		}
 
-		var ribbon = new THREE.Ribbon( geom, new THREE.MeshBasicMaterial({ color: 0xFFFF00,  side: THREE.DoubleSide }) ); //vertexColors: true,
+		var ribbon = new THREE.Ribbon( geom, material );
 		return ribbon
 	}
 }
 
 
-var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
+var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength, material){
 	var subDivisionsU = subDivisionsU, subDivisionsV = subDivisionsV, subDivLength = subDivLength,
 	currU = 0, currV = 0, goRight = true, stepA = true, reachedEnd = false
 
-	var meshContainer = new TriStripContainer()
+	var meshContainer = new TriStripContainer(material)
 
 	while(!reachedEnd){
 		var currVert = new THREE.Vector3( currU * subDivLength, currV * subDivLength, 0 )
@@ -126,12 +126,12 @@ var RibbonMesh = function(subDivisionsU, subDivisionsV, subDivLength){
 }
 
 
-var RibbonCylinder = function(radius, length, subdivU, subDivV){
+var RibbonCylinder = function(radius, length, subdivU, subDivV, material){
 	var mProfileRadius = radius, mCylinderLen = length, subdivisionsU = subdivU, subdivisionsV = subDivV, 
     currU = 0, currV = 0, goRight = true, stepA = true, deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI / subdivisionsV
     reachedEnd = false
 
-	var cylinderContainer = new TriStripContainer()
+	var cylinderContainer = new TriStripContainer(material)
 
 	while(!reachedEnd){
 		// To create a 3D cylinder, we will associate the U axis of the 2D mesh with the circumference of 
@@ -197,13 +197,13 @@ var RibbonCylinder = function(radius, length, subdivU, subDivV){
 }
 
 
-var RibbonSphere = function(radius, subU, subV){
+var RibbonSphere = function(radius, subU, subV, material){
 	var mSphereRadius = radius, subdivisionsU = subU, subdivisionsV = subV, 
     currU = 0, currV = 0, goRight = true, stepA = true, 
     deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI / subdivisionsV, reachedEnd = false
 
 
-	var sphereContainer = new TriStripContainer()
+	var sphereContainer = new TriStripContainer(material)
 
 	while(!reachedEnd){
 		// Find the current angle within the current longitudinal profile
@@ -261,7 +261,7 @@ var RibbonSphere = function(radius, subU, subV){
 
 
 
-var RibbonTorus = function(profileRadius, radius, subDivU, subDivV){
+var RibbonTorus = function(profileRadius, radius, subDivU, subDivV, material){
 	var rotateAroundAxis = function(vec, a , t){
 		var s = Math.sin(t)
 		var c = Math.cos(t)
@@ -279,7 +279,7 @@ var RibbonTorus = function(profileRadius, radius, subDivU, subDivV){
     deltaThetaU = Math.PI*2 / subdivisionsU, deltaThetaV = Math.PI*2 / subdivisionsV, 
     reachedEnd = false
 
-	var torusContainer = new TriStripContainer()
+	var torusContainer = new TriStripContainer(material)
 
 	while(!reachedEnd){
 
