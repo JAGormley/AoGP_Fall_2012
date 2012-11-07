@@ -32,6 +32,7 @@ class Vert {
     mTriangleSet.add( iTriangle );
   }
   
+  //set places position into an unordered array - if it is already there it doesn't add it
   void setPosition(PVector iPosition) {
     mPosition.set( iPosition );
   }
