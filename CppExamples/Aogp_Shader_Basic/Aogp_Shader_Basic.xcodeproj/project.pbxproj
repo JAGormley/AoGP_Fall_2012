@@ -258,7 +258,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder_d.a";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
 			};
 			name = Debug;
@@ -285,7 +285,7 @@
 				HEADER_SEARCH_PATHS = "$(CINDER_PATH)/boost";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "$(CINDER_PATH)/lib/libcinder.a";
-				SDKROOT = macosx;
+				SDKROOT = macosx10.7;
 				USER_HEADER_SEARCH_PATHS = "../include $(CINDER_PATH)/include";
 			};
 			name = Release;
@@ -293,10 +293,14 @@
 		32ACEC8B16552EAB00AF8466 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CINDER_PATH = /Users/roberttilton/Documents/Cinder;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aogp_Shader_Basic/Aogp_Shader_Basic-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Aogp_Shader_Basic/Aogp_Shader_Basic-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -304,10 +308,14 @@
 		32ACEC8C16552EAB00AF8466 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CINDER_PATH = /Users/roberttilton/Documents/Cinder;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Aogp_Shader_Basic/Aogp_Shader_Basic-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "Aogp_Shader_Basic/Aogp_Shader_Basic-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -331,6 +339,7 @@
 				32ACEC8C16552EAB00AF8466 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
