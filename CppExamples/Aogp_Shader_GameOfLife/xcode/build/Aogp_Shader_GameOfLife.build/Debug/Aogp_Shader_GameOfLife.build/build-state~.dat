@@ -1,0 +1,237 @@
+TAogp_Shader_GameOfLife
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist Info.plist
+cCpResource ../resources/CinderApp.icns build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns
+cProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife normal i386
+cTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F90F72900000000000000CC
+t1334900521
+s204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005067581C0000000000002400
+t1348950044
+s9216
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005067581C0000000000023FF4
+t1348950044
+s147444
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005067581C00000000000061F4
+t1348950044
+s25076
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005067581C00000000000001E5
+t1348950044
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000005067581C000000000000E8A8
+t1348950044
+s59560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000503F1B7700000000000000AA
+t1346313079
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005067582500000000000024F0
+t1348950053
+s9456
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c00000000506758250000000000024D90
+t1348950053
+s150928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005067582500000000000060B4
+t1348950053
+s24756
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005067582600000000000001E5
+t1348950054
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c0000000050675826000000000000E920
+t1348950054
+s59680
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004E1B3B730000000000006530
+t1310407539
+s25904
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E1B3B730000000000006560
+t1310407539
+s25952
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004FCEBD06000000000007CED0
+t1338948870
+s511696
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004FCEBD26000000000002E350
+t1338948902
+s189264
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c000000004FCEBD3100000000004B7F60
+t1338948913
+s4947808
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004FCEBD31000000000032B7E0
+t1338948913
+s3323872
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../resources/CinderApp.icns
+c0000000050C0DECE000000000001BEB5
+t1354817230
+s114357
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp
+c0000000050C0DECE00000000000019E6
+t1354817230
+s6630
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/Aogp_Shader_GameOfLife_Prefix.pch
+c0000000050C0DECE0000000000000093
+t1354817230
+s147
+i<Cocoa/Cocoa.h>
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLife.LinkFileList
+c0000000050C0DF4700000000000000DE
+t1354817351
+s222
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth
+t2
+s0
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-ftonplslpnjvyvdavwwsbvcdwunz/Aogp_Shader_GameOfLife_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c0000000050C0DECE000000000000035F
+t1354817230
+s863
+
+CBuild AST from /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesbd56b2c71671b641^1fa2c1c71671b641^---0#1#0#--18"Check dependencies36"A502B341-CF03-4477-92A0-54038026860C-
+
+CCompileC build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s376510151.866323
+e376510161.581966
+r1
+xCompileC
+xbuild/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Compile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cppa4ffddc71671b641^e3fd94d11671b641^---0#0#0#-19%DVTDocumentLocation2@156"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp0000000000000000^3917"CompileC build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o ../src/Aogp_Shader_GameOfLifeApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-project-headers.hmap -iquote/Users/roberttilton/Documents/Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/include -I/Users/roberttilton/Documents/Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.d --serialize-diagnostics /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../src/Aogp_Shader_GameOfLifeApp.cpp -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLifeApp.o36"32BEE808-347C-4299-B464-CCAA8BAD806C-
+
+CCpResource ../resources/CinderApp.icns build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns
+s376510151.784789
+e376510151.788081
+r1
+xCpResource
+x../resources/CinderApp.icns
+xbuild/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection77"Copy build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns1af9c8c71671b641^d657cbc71671b641^---0#0#0#-19%DVTDocumentLocation2@192"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns000000000080d041^629"CpResource ../resources/CinderApp.icns build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources/CinderApp.icns    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/../resources/CinderApp.icns /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Resources36"2DED1058-E1A0-4979-ACC1-5B68210EFF2F-
+
+CLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife normal i386
+s376510161.590021
+e376510165.459775
+r1
+xLd
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection185"Link /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLifeb43897d11671b641^67b475d51671b641^---0#0#0#--1404"Ld build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife normal i386    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug -filelist /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Objects-normal/i386/Aogp_Shader_GameOfLife.LinkFileList -mmacosx-version-min=10.7 /Users/roberttilton/Documents/Cinder/lib/libcinder_d.a -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/MacOS/Aogp_Shader_GameOfLife36"D37275A6-10B0-459C-AC85-583FE78F927E-
+
+CProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist Info.plist
+s376510151.773767
+e376510151.776768
+r1
+xProcessInfoPlistFile
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist6325c6c71671b641^33e2c6c71671b641^--1(21%IDEActivityLogMessage2@194"invalid character '_' in Bundle Identifier at column 18. This string must be a uniform type identifier (UTI) that contains only alphanumeric (A-Z,a-z,0-9), hyphen (-), and period (.) characters.102"Invalid character '_' in Bundle Identifier at column 18. This string must be a uniform type identifier376510151#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Info.plist Utility Warning--0#0#0#-19%DVTDocumentLocation4@130"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/Info.plist0000000000000000^618"ProcessInfoPlistFile build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist Info.plist    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app/Contents/Info.plist36"05DBF61C-F114-4A86-8769-4E61B03F7DAB-
+
+CProcessPCH++ /Users/roberttilton/Library/Developer/Xcode/DerivedData/Aogp_Shader_GameOfLife-buidlmyhtqgdweesbqtqgivgekuu/Index/PrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-eaeulspuwkurxyfotddotuuhootc_ast/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /Users/roberttilton/Library/Developer/Xcode/DerivedData/Aogp_Shader_GameOfLife-buidlmyhtqgdweesbqtqgivgekuu/Index/PrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-gumcnjnmendwxbcmuyapuqzdndtj_ast/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s376510151.795754
+e376510151.858394
+r1
+xProcessPCH++
+x/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth
+xAogp_Shader_GameOfLife_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Precompile Aogp_Shader_GameOfLife_Prefix.pch81cfcbc71671b641^83bfdbc71671b641^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/Aogp_Shader_GameOfLife_Prefix.pch0000000000000000^3702"ProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/Aogp_Shader_GameOfLife-project-headers.hmap -iquote/Users/roberttilton/Documents/Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/include -I/Users/roberttilton/Documents/Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Aogp_Shader_GameOfLife.build/Debug/Aogp_Shader_GameOfLife.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug --serialize-diagnostics /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/Aogp_Shader_GameOfLife_Prefix.pch -o /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-agwwqfotmvtxcifqecimfroqkshk/Aogp_Shader_GameOfLife_Prefix.pch.d36"57B9BD07-C10B-476E-B0BB-0D00DD323C38-
+
+CProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Aogp_Shader_GameOfLife_Prefix-ftonplslpnjvyvdavwwsbvcdwunz/Aogp_Shader_GameOfLife_Prefix.pch.pth Aogp_Shader_GameOfLife_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app
+s376510165.468966
+e376510165.473233
+r1
+xTouch
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection148"Touch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.appce1a78d51671b641^5b2879d51671b641^---0#0#0#--321"Touch build/Debug/Aogp_Shader_GameOfLife.app    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode    /usr/bin/touch -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/CppExamples/Aogp_Shader_GameOfLife/xcode/build/Debug/Aogp_Shader_GameOfLife.app36"6BADE98B-0789-47C2-B19B-DA9472071B53-
+

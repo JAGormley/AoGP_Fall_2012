@@ -130,6 +130,7 @@ void Aogp_Shader_GameOfLifeApp::keyDown(KeyEvent event) {
 
 void Aogp_Shader_GameOfLifeApp::update() {
     // Choose the next framebuffer (ping-pong):
+    // moding it by itself always makes sure they're toggled and never the same 
 	mCurrentFBO = ( mCurrentFBO + 1 ) % 2;
 	mOtherFBO   = ( mCurrentFBO + 1 ) % 2;
 	
