@@ -1,0 +1,197 @@
+TshaderInline
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Info.plist Info.plist
+cCpResource ../resources/CinderApp.icns build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns
+cProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth shaderInline_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInline normal i386
+cTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F90F72900000000000000CC
+t1334900521
+s204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005067581C0000000000002400
+t1348950044
+s9216
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005067581C0000000000023FF4
+t1348950044
+s147444
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005067581C00000000000061F4
+t1348950044
+s25076
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005067581C00000000000001E5
+t1348950044
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000005067581C000000000000E8A8
+t1348950044
+s59560
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004E1B3B730000000000006530
+t1310407539
+s25904
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E1B3B730000000000006560
+t1310407539
+s25952
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004FCEBD06000000000007CED0
+t1338948870
+s511696
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004FCEBD26000000000002E350
+t1338948902
+s189264
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c000000004FCEBD3100000000004B7F60
+t1338948913
+s4947808
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004FCEBD31000000000032B7E0
+t1338948913
+s3323872
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../resources/CinderApp.icns
+c0000000050521C6D000000000001BEB5
+t1347558509
+s114357
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp
+c0000000050D7DA290000000000000E53
+t1356323369
+s3667
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Info.plist
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInline
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInline.LinkFileList
+c0000000050D7DA3E00000000000000D1
+t1356323390
+s209
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/shaderInline_Prefix.pch
+c0000000050D7D9C60000000000000093
+t1356323270
+s147
+i<Cocoa/Cocoa.h>
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c0000000050D7D9C60000000000000355
+t1356323270
+s853
+
+CBuild AST from /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies17f353be1188b641^afb262be1188b641^---0#1#0#--18"Check dependencies36"74EF4A07-2330-497D-BB6E-3317E63CAE4B-
+
+CCompileC build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s378016190.810531
+e378016194.012789
+r1
+xCompileC
+xbuild/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Compile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp7ba2cfbe1188b641^354603c21188b641^---0#0#0#-19%DVTDocumentLocation2@163"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp0000000000000000^3806"CompileC build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o ../src/shaderInlineApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-project-headers.hmap -iquote../../../../../../../../Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/include -I../../../../../../../../Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.d --serialize-diagnostics /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../src/shaderInlineApp.cpp -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInlineApp.o36"C4CB5931-0BF5-4A8C-BC8C-294E18260B29-
+
+CCpResource ../resources/CinderApp.icns build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns
+s378016190.453406
+e378016190.473173
+r1
+xCpResource
+x../resources/CinderApp.icns
+xbuild/Debug/shaderInline.app/Contents/Resources/CinderApp.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns992a74be1188b641^b32379be1188b641^---0#0#0#-19%DVTDocumentLocation2@199"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns000000000080d041^660"CpResource ../resources/CinderApp.icns build/Debug/shaderInline.app/Contents/Resources/CinderApp.icns    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/../resources/CinderApp.icns /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Resources36"DE65A9D0-679D-4215-B923-AFF8B7873043-
+
+CLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInline normal i386
+s378016194.019480
+e378016198.767586
+r1
+xLd
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInline
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Link /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInlined41005c21188b641^cf82c4c61188b641^---0#0#0#--1413"Ld build/Debug/shaderInline.app/Contents/MacOS/shaderInline normal i386    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug -filelist /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/Objects-normal/i386/shaderInline.LinkFileList -mmacosx-version-min=10.7 ../../../../../../../../Cinder/lib/libcinder_d.a -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/MacOS/shaderInline36"FD82968A-1843-4AA9-90EA-755D33744558-
+
+CProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Info.plist Info.plist
+s378016190.421418
+e378016190.445319
+r1
+xProcessInfoPlistFile
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist991271be1188b641^150172be1188b641^---0#0#0#-19%DVTDocumentLocation2@147"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/Info.plist0000000000000000^639"ProcessInfoPlistFile build/Debug/shaderInline.app/Contents/Info.plist Info.plist    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app/Contents/Info.plist36"6DA97746-A0B9-4F8F-8AB3-3737F0026042-
+
+CProcessPCH++ /Users/roberttilton/Library/Developer/Xcode/DerivedData/shaderInline-cghltofbbcqwilfoakcvluvjjvbk/Index/PrecompiledHeaders/shaderInline_Prefix-fjijsdtwvffllzfholpibycyvady_ast/shaderInline_Prefix.pch.pth shaderInline_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth shaderInline_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s378016190.481222
+e378016190.803065
+r1
+xProcessPCH++
+x/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth
+xshaderInline_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Precompile shaderInline_Prefix.pch008c7bbe1188b641^ab95cdbe1188b641^---0#0#0#-19%DVTDocumentLocation2@160"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/shaderInline_Prefix.pch0000000000000000^3600"ProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth shaderInline_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/shaderInline-project-headers.hmap -iquote../../../../../../../../Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/include -I../../../../../../../../Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/shaderInline.build/Debug/shaderInline.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug --serialize-diagnostics /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/shaderInline_Prefix.pch -o /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderInline_Prefix-ghkdqqctswrkldepmzwtzcwqpqsr/shaderInline_Prefix.pch.d36"C1AD5FB0-4A3A-4F70-B514-C680E1A4CC75-
+
+CTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app
+s378016198.775676
+e378016199.181650
+r1
+xTouch
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection155"Touch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.appe8a1c6c61188b641^13812ec71188b641^---0#0#0#--335"Touch build/Debug/shaderInline.app    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode    /usr/bin/touch -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderInline/xcode/build/Debug/shaderInline.app36"ACFED020-9046-418D-B488-F6B6735759A3-
+

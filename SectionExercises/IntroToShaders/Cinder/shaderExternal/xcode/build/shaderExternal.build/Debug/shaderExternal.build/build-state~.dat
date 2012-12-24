@@ -1,0 +1,216 @@
+TshaderExternal
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Info.plist Info.plist
+cCpResource ../resources/CinderApp.icns build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns
+cCpResource ../assets build/Debug/shaderExternal.app/Contents/Resources/assets
+cProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth shaderExternal_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal normal i386
+cTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
+c000000004F90F72900000000000000CC
+t1334900521
+s204
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Accelerate.framework/Accelerate
+c000000005067581C0000000000002400
+t1348950044
+s9216
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000005067581C0000000000023FF4
+t1348950044
+s147444
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AudioUnit.framework/AudioUnit
+c000000005067581C00000000000061F4
+t1348950044
+s25076
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c000000005067581C00000000000001E5
+t1348950044
+s485
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000005067581C000000000000E8A8
+t1348950044
+s59560
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004E1B3B730000000000006530
+t1310407539
+s25904
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004E1B3B730000000000006560
+t1310407539
+s25952
+
+N/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c000000004FCEBD06000000000007CED0
+t1338948870
+s511696
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004FCEBD26000000000002E350
+t1338948902
+s189264
+
+N/System/Library/Frameworks/QTKit.framework/QTKit
+c000000004FCEBD3100000000004B7F60
+t1338948913
+s4947808
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004FCEBD31000000000032B7E0
+t1338948913
+s3323872
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../assets
+c0000000050A96BAB00000000000000AA
+t1353280427
+s170
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../resources/CinderApp.icns
+c0000000050521C6D000000000001BEB5
+t1347558509
+s114357
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp
+c0000000050D7DA8800000000000007A9
+t1356323464
+s1961
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Info.plist
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources/assets
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternal.LinkFileList
+c0000000050D7DA8800000000000000D9
+t1356323464
+s217
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o
+t2
+s0
+
+N/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/shaderExternal_Prefix.pch
+c0000000050D7D9D90000000000000093
+t1356323289
+s147
+i<Cocoa/Cocoa.h>
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth
+t2
+s0
+
+NInfo.plist
+c0000000050D7D9D90000000000000357
+t1356323289
+s855
+
+CBuild AST from /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies406841081288b641^1cd14d081288b641^---0#1#0#--18"Check dependencies36"23CC8EA1-828C-4226-A0B0-BE1034B69641-
+
+CCompileC build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s378016264.360872
+e378016266.439422
+r1
+xCompileC
+xbuild/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Compile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cppf27a5c081288b641^787f700a1288b641^---0#0#0#-19%DVTDocumentLocation2@167"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp0000000000000000^3896"CompileC build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o ../src/shaderExternalApp.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-project-headers.hmap -iquote../../../../../../../../Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/include -I../../../../../../../../Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.d --serialize-diagnostics /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../src/shaderExternalApp.cpp -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternalApp.o36"EED762AA-1134-4865-8EAD-94BD90465CD9-
+
+CCpResource ../assets build/Debug/shaderExternal.app/Contents/Resources/assets
+s378016264.320093
+e378016264.329851
+r1
+xCpResource
+x../assets
+xbuild/Debug/shaderExternal.app/Contents/Resources/assets
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug/shaderExternal.app/Contents/Resources/assets1d0352081288b641^e17e54081288b641^---0#0#0#-19%DVTDocumentLocation2@195"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources/assets000000000080d041^626"CpResource ../assets build/Debug/shaderExternal.app/Contents/Resources/assets    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../assets /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources36"8368FF0A-743E-4744-9324-8B355320088C-
+
+CCpResource ../resources/CinderApp.icns build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns
+s378016264.320063
+e378016264.330503
+r1
+xCpResource
+x../resources/CinderApp.icns
+xbuild/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns600352081288b641^2c9c54081288b641^---0#0#0#-19%DVTDocumentLocation2@203"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns000000000080d041^670"CpResource ../resources/CinderApp.icns build/Debug/shaderExternal.app/Contents/Resources/CinderApp.icns    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/../resources/CinderApp.icns /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Resources36"361F9AAA-5B62-476F-95EE-61E49EDA2700-
+
+CLd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal normal i386
+s378016266.446794
+e378016267.884438
+r1
+xLd
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection188"Link /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternalda8d720a1288b641^b56be20b1288b641^---0#0#0#--1437"Ld build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal normal i386    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug -filelist /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/Objects-normal/i386/shaderExternal.LinkFileList -mmacosx-version-min=10.7 ../../../../../../../../Cinder/lib/libcinder_d.a -framework Cocoa -framework OpenGL -framework Carbon -framework CoreVideo -framework QTKit -framework QuickTime -framework Accelerate -framework AudioToolbox -framework AudioUnit -framework CoreAudio -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/MacOS/shaderExternal36"E248BBCF-8D95-4D66-914D-BA8DF3354BDE-
+
+CProcessInfoPlistFile /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Info.plist Info.plist
+s378016264.307878
+e378016264.311060
+r1
+xProcessInfoPlistFile
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Info.plist
+xInfo.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Process Info.plist1edf4e081288b641^a1a14f081288b641^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/Info.plist0000000000000000^651"ProcessInfoPlistFile build/Debug/shaderExternal.app/Contents/Info.plist Info.plist    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    builtin-infoPlistUtility Info.plist -genpkginfo /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app/Contents/Info.plist36"BD9BFB84-DE22-423D-A9F9-66F252AD27D2-
+
+CProcessPCH++ /Users/roberttilton/Library/Developer/Xcode/DerivedData/shaderExternal-fjsrnjdeatugsacpmrpyexxlwcvi/Index/PrecompiledHeaders/shaderExternal_Prefix-fomkvwoqsniixlbklgqcgevdrndh_ast/shaderExternal_Prefix.pch.pth shaderExternal_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth shaderExternal_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s378016264.340269
+e378016264.354477
+r1
+xProcessPCH++
+x/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth
+xshaderExternal_Prefix.pch
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Precompile shaderExternal_Prefix.pche38a57081288b641^55bf5a081288b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/shaderExternal_Prefix.pch0000000000000000^3672"ProcessPCH++ /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth shaderExternal_Prefix.pch normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++-header -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -Wno-sign-conversion -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-generated-files.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-own-target-headers.hmap -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-all-target-headers.hmap -iquote /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/shaderExternal-project-headers.hmap -iquote../../../../../../../../Cinder/include -iquote../include -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/include -I../../../../../../../../Cinder/boost -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/DerivedSources/i386 -I/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/shaderExternal.build/Debug/shaderExternal.build/DerivedSources -F/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug --serialize-diagnostics /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.dia -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/shaderExternal_Prefix.pch -o /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/shaderExternal_Prefix-dsjospycwswutzfhrnxjecoiwiqy/shaderExternal_Prefix.pch.d36"400DA643-46B8-4EEC-BF3B-168ECD599D21-
+
+CTouch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app
+s378016267.893103
+e378016268.091859
+r1
+xTouch
+x/Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection159"Touch /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app3ab0e40b1288b641^7784170c1288b641^---0#0#0#--343"Touch build/Debug/shaderExternal.app    cd /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode    /usr/bin/touch -c /Users/roberttilton/Documents/NYU-ITP/Semester3/AoGP_Fall_2012/SectionExercises/IntroToShaders/Cinder/shaderExternal/xcode/build/Debug/shaderExternal.app36"4F1204CF-FE54-461F-A985-225DABE929A9-
+
