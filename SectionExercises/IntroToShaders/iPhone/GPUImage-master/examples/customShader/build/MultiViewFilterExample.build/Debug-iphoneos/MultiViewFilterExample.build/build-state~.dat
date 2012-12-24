@@ -1,0 +1,469 @@
+TMultiViewFilterExample
+v5
+r1
+cCheck dependencies
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist MultiViewFilterExample/MultiViewFilterExample-Info.plist
+cProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample normal armv7s
+cLd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample normal armv7
+cCreateUniversalBinary /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample normal "armv7 armv7s"
+cGenerateDSYMFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample
+cCpResource MultiViewFilterExample/Shader1.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh
+cCopyStringsFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj/InfoPlist.strings MultiViewFilterExample/en.lproj/InfoPlist.strings
+cCpResource MultiViewFilterExample/Shader2.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh
+cProcessProductPackaging "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision
+cProcessProductPackaging "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision
+cTouch /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent
+cCodeSign /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk
+c00000000503C83D40000000000000132
+t1346143188
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
+c00000000506757ED0000000000000094
+t1348949997
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
+c00000000506757ED0000000000000096
+t1348949997
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000506757EE000000000036C800
+t1348949998
+s3590144
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000506757EF0000000000322740
+t1348949999
+s3286848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000506757EF00000000001692A0
+t1348949999
+s1479328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CoreVideo.framework/CoreVideo
+c00000000506757EF0000000000041310
+t1348949999
+s267024
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000506757F00000000000629C80
+t1348950000
+s6462592
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
+c00000000506757F00000000000024190
+t1348950000
+s147856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000506757F00000000000359720
+t1348950000
+s3512096
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000506757F300000000011BA850
+t1348950003
+s18589776
+
+N/Users/roberttilton/Downloads/GPUImage-master/build/Debug-iphoneos/libGPUImage.a
+c0000000050C809F3000000000061FC88
+t1355287027
+s6421640
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m
+c0000000050B381D2000000000000098F
+t1353941458
+s2447
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Prefix.pch
+c0000000050B381D2000000000000015B
+t1353941458
+s347
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m
+c0000000050B381D20000000000000AE2
+t1353941458
+s2786
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/Shader1.fsh
+c0000000050B381D20000000000000224
+t1353941458
+s548
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/Shader2.fsh
+c0000000050B381D20000000000000121
+t1353941458
+s289
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/en.lproj/InfoPlist.strings
+c0000000050B381D2000000000000002D
+t1353941458
+s45
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m
+c0000000050B381D200000000000000E1
+t1353941458
+s225
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/PkgInfo
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample.LinkFileList
+c0000000050C80BA8000000000000024E
+t1355287464
+s590
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample.LinkFileList
+c0000000050C80BA80000000000000251
+t1355287464
+s593
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o
+t2
+s0
+
+N/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o
+t2
+s0
+
+N/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision
+c0000000050C77F470000000000001D3A
+t1355251527
+s7482
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth
+t2
+s0
+
+NMultiViewFilterExample/MultiViewFilterExample-Info.plist
+c0000000050B381D200000000000005DF
+t1353941458
+s1503
+
+CBuild AST from /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m
+r0
+
+CBuild AST from /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m
+r0
+
+CBuild AST from /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese65baf284378b641^2a1ed7284378b641^---0#1#0#--18"Check dependencies36"512EB6D1-8808-4B21-A026-B68D8676C5B3-
+
+CCodeSign /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+s376980266.445771
+e376980267.599479
+r1
+xCodeSign
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"CodeSign build/Debug-iphoneos/MultiViewFilterExample.app2443722a4378b641^d977992b4378b641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/0000000000000000^1034"CodeSign build/Debug-iphoneos/MultiViewFilterExample.app    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign a4703e0e8312df06f97b588089b0376a2ea07345 --resource-rules=/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist --entitlements /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app36"9575B293-7F7A-4C22-9790-8C024D0C1C26-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.595623
+e376980265.770730
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.mb1a498294378b641^6e4ec5294378b641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m0000000000000000^4042"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o MultiViewFilterExample/MultiViewAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7 -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewAppDelegate.o36"F956EBAF-06B5-4CC6-A865-10F1E1872742-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.648638
+e376980265.795843
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m1d39a6294378b641^a1bccb294378b641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m0000000000000000^4060"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o MultiViewFilterExample/MultiViewViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7 -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewViewController.o36"A0E9CB22-CC26-41B1-A702-30195C281F4C-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.476088
+e376980265.647267
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m2d0b7a294378b641^5fb6a5294378b641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m0000000000000000^3946"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o MultiViewFilterExample/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7 -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/main.o36"BC1BDE90-5EB5-4B94-A0AD-2C5BB116BCC2-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.384740
+e376980265.662531
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m84bc62294378b641^d49ba9294378b641^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m0000000000000000^4049"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o MultiViewFilterExample/MultiViewAppDelegate.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7s -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewAppDelegate.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewAppDelegate.o36"79EA1727-0F0F-48D8-B3DD-DD9C7ED58255-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.384768
+e376980265.656080
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection134"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.mcdab62294378b641^0ef5a7294378b641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m0000000000000000^4067"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o MultiViewFilterExample/MultiViewViewController.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7s -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewViewController.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewViewController.o36"89B4E8B1-5F5E-4450-899D-A54D8E56F7A2-
+
+CCompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980265.384627
+e376980265.594297
+r1
+xCompileC
+xbuild/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.mf5bd62294378b641^922498294378b641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m0000000000000000^3953"CompileC build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o MultiViewFilterExample/main.m normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7s -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7s -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -include /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch -MMD -MT dependencies -MF /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.d --serialize-diagnostics /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/main.m -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/main.o36"8503E32E-0657-418B-96C0-F142C977F509-
+
+CCopyStringsFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj/InfoPlist.strings MultiViewFilterExample/en.lproj/InfoPlist.strings
+s376980266.008941
+e376980266.012069
+r1
+xCopyStringsFile
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj/InfoPlist.strings
+xMultiViewFilterExample/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy MultiViewFilterExample/en.lproj/InfoPlist.strings016a022a4378b641^3f19032a4378b641^---0#0#0#-19%DVTDocumentLocation2@143"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/en.lproj/InfoPlist.strings0000000000000000^692"CopyStringsFile build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj/InfoPlist.strings MultiViewFilterExample/en.lproj/InfoPlist.strings    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/en.lproj -- MultiViewFilterExample/en.lproj/InfoPlist.strings36"117C974E-B959-494D-9ABF-0934DCFBABA7-
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist
+s376980264.848947
+e376980264.883578
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist
+xbuild/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist8368d9284378b641^f033e2284378b641^---0#0#0#-19%DVTDocumentLocation2@161"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist000000000080d041^834"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app36"9786CB30-252E-4E85-8832-68916ABF7F46-
+
+CCpResource MultiViewFilterExample/Shader1.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh
+s376980266.008944
+e376980266.013332
+r1
+xCpResource
+xMultiViewFilterExample/Shader1.fsh
+xbuild/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh446a022a4378b641^2b6b032a4378b641^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh000000000080d041^730"CpResource MultiViewFilterExample/Shader1.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader1.fsh    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/Shader1.fsh /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app36"B79F0266-9AF1-45A9-8A9A-F9486F21A02C-
+
+CCpResource MultiViewFilterExample/Shader2.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh
+s376980266.009505
+e376980266.013785
+r1
+xCpResource
+xMultiViewFilterExample/Shader2.fsh
+xbuild/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fshdb89022a4378b641^0188032a4378b641^---0#0#0#-19%DVTDocumentLocation2@153"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh000000000080d041^730"CpResource MultiViewFilterExample/Shader2.fsh build/Debug-iphoneos/MultiViewFilterExample.app/Shader2.fsh    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/Shader2.fsh /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app36"8199B9CC-E203-41D0-A0BE-90E5FBB74F1F-
+
+CCreateUniversalBinary /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample normal "armv7 armv7s"
+s376980265.864021
+e376980265.907231
+r1
+xCreateUniversalBinary
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample
+xnormal
+xarmv7 armv7s
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection172"Create universal binary /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample4e46dd294378b641^2940e8294378b641^---0#0#0#-19%DVTDocumentLocation2@164"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample000000000080d041^965"CreateUniversalBinary build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample normal "armv7 armv7s"    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    lipo -create /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample -output /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample36"8E42B66E-D0B2-4F67-99AC-9820240C72AE-
+
+CGenerateDSYMFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample
+s376980265.915175
+e376980266.000649
+r1
+xGenerateDSYMFile
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Generating /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM0e67ea294378b641^ed2a002a4378b641^---0#0#0#-19%DVTDocumentLocation2@146"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM000000000080d041^797"GenerateDSYMFile build/Debug-iphoneos/MultiViewFilterExample.app.dSYM build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/MultiViewFilterExample -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app.dSYM36"47AB52E5-F94A-4C32-BE41-D54C8A882EC1-
+
+CLd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample normal armv7
+s376980265.824780
+e376980265.856123
+r1
+xLd
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample
+xnormal
+xarmv7
+old: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection205"Link /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExamplec041d3294378b641^ed2bdb294378b641^-141"ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'1(21%IDEActivityLogMessage2@127"Directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'-376980265#0#141#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1727"Ld build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample normal armv7    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -filelist /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.0 -framework AVFoundation -framework OpenGLES -framework QuartzCore -weak_framework CoreVideo -framework CoreMedia /Users/roberttilton/Downloads/GPUImage-master/build/Debug-iphoneos/libGPUImage.a -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7/MultiViewFilterExample36"C6DB62F1-F94B-4B61-A6A4-37A26C207127-
+
+CLd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample normal armv7s
+s376980265.669355
+e376980265.768256
+r1
+xLd
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample
+xnormal
+xarmv7s
+old: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection206"Link /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExampleac70ab294378b641^47adc4294378b641^-141"ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'1(21%IDEActivityLogMessage2@127"Directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc'-376980265#0#141#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1732"Ld build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample normal armv7s    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7s -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/arc -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos -filelist /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample.LinkFileList -dead_strip -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.0 -framework AVFoundation -framework OpenGLES -framework QuartzCore -weak_framework CoreVideo -framework CoreMedia /Users/roberttilton/Downloads/GPUImage-master/build/Debug-iphoneos/libGPUImage.a -framework UIKit -framework Foundation -framework CoreGraphics -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/Objects-normal/armv7s/MultiViewFilterExample36"9E0DF3DC-D0A5-4375-90C1-180960901FA4-
+
+CProcessInfoPlistFile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist MultiViewFilterExample/MultiViewFilterExample-Info.plist
+s376980264.849453
+e376980264.884393
+r1
+xProcessInfoPlistFile
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist
+xMultiViewFilterExample/MultiViewFilterExample-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Process MultiViewFilterExample/MultiViewFilterExample-Info.plist6287d9284378b641^e069e2284378b641^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Info.plist0000000000000000^1002"ProcessInfoPlistFile build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist MultiViewFilterExample/MultiViewFilterExample-Info.plist    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility MultiViewFilterExample/MultiViewFilterExample-Info.plist -genpkginfo /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/ResourceRules.plist -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/Info.plist36"20A3ED98-833A-4516-99B6-2222F5A42CE8-
+
+CProcessPCH /Users/roberttilton/Library/Developer/Xcode/DerivedData/MultiViewFilterExample-deqtrldwgsibwfaxiqgiyliauzva/Index/PrecompiledHeaders/MultiViewFilterExample-Prefix-dhyzhjdkpphqnndllekqladoybma_ast/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/roberttilton/Library/Developer/Xcode/DerivedData/MultiViewFilterExample-deqtrldwgsibwfaxiqgiyliauzva/Index/PrecompiledHeaders/MultiViewFilterExample-Prefix-guvewfhfhjnasactjypnycnbzbub_ast/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980264.893896
+e376980265.376484
+r1
+xProcessPCH
+x/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth
+xMultiViewFilterExample/MultiViewFilterExample-Prefix.pch
+xnormal
+xarmv7s
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Precompile MultiViewFilterExample/MultiViewFilterExample-Prefix.pchb9ffe4284378b641^466060294378b641^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Prefix.pch0000000000000000^3914"ProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7s objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7s -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7s -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos --serialize-diagnostics /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Prefix.pch -o /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-czxttahrsuyumagqzxvkgqsxgfoz/MultiViewFilterExample-Prefix.pch.d36"09F81643-A1D1-4F97-A7EE-0FE39C645A4B-
+
+CProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s376980264.893273
+e376980265.468526
+r1
+xProcessPCH
+x/var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth
+xMultiViewFilterExample/MultiViewFilterExample-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Precompile MultiViewFilterExample/MultiViewFilterExample-Prefix.pch51f4e4284378b641^750478294378b641^---0#0#0#-19%DVTDocumentLocation2@150"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Prefix.pch0000000000000000^3911"ProcessPCH /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth MultiViewFilterExample/MultiViewFilterExample-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.0 -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-generated-files.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-own-target-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-all-target-headers.hmap -iquote /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample-project-headers.hmap -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/include -I../../framework/Source -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources/armv7 -I/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/DerivedSources -F/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos --serialize-diagnostics /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.dia -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/MultiViewFilterExample/MultiViewFilterExample-Prefix.pch -o /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/hw/zqky_sx91mx4q2v9krt7zc3c0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MultiViewFilterExample-Prefix-fcgaimgyrcisumdxkpkjpptbkzpe/MultiViewFilterExample-Prefix.pch.d36"86DA7F8F-369A-4355-8983-CBFE6B272957-
+
+CProcessProductPackaging "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision
+s376980266.143522
+e376980266.356584
+r1
+xProcessProductPackaging
+x/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection214"ProcessProductPackaging "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision92ce242a4378b641^c74b5b2a4378b641^---0#0#0#-19%DVTDocumentLocation2@166"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision0000000000000000^796"ProcessProductPackaging "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility "/Users/roberttilton/Library/MobileDevice/Provisioning Profiles/91CC43AD-65DE-43AC-AD42-32248D27CBAC.mobileprovision" -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app/embedded.mobileprovision36"E9FB2599-CF8D-4EB7-AB70-5D20343D5021-
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent
+s376980266.421251
+e376980266.436708
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection252"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent3df26b2a4378b641^3acc6f2a4378b641^---0#0#0#-19%DVTDocumentLocation2@201"file://localhost/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent000000000080d041^898"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/MultiViewFilterExample.build/Debug-iphoneos/MultiViewFilterExample.build/MultiViewFilterExample.xcent36"7F6ECB24-E431-4A34-9FE5-67B80829B595-
+
+CTouch /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+s376980266.365698
+e376980266.412086
+r1
+xTouch
+x/Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Touch /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app73b95d2a4378b641^957f692a4378b641^---0#0#0#--475"Touch build/Debug-iphoneos/MultiViewFilterExample.app    cd /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/roberttilton/Downloads/GPUImage-master/examples/MultiViewFilterExample/build/Debug-iphoneos/MultiViewFilterExample.app36"5165CD47-308C-42EA-B754-8D0FFE469A15-
+
