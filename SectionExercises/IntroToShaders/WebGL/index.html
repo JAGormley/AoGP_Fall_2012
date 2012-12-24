@@ -20,6 +20,9 @@
 
 
 	<script type="text/javascript">
+
+
+
 		var scene, renderer;
 		var camera, tvset;
 
@@ -121,6 +124,55 @@
 
 
 
+			//declare shader	
+			var sobelShader = {
+			    uniforms: {
+			        'texture': {
+			            type: 't',
+			            value: videoTexture
+			        },
+			         'width': {
+			            type: 'f',
+			            value: 320.0
+			        },
+			         'height': {
+			            type: 'f',
+			            value: 240.0
+			        }
+			    },
+			    vertexShader: [
+			        'varying vec2 vUv;',
+			        'void main() {',
+			           'vUv = uv;',
+			           'gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );',
+			        '}'
+			        ].join('\n'),
+			    fragmentShader: [
+			        'uniform sampler2D texture;',
+			        'uniform float width;',
+			        'uniform float height;',
+			        'varying vec2 vUv;',
+			        'void main(void) {',
+			            'float w = 1.0/width;',
+			            'float h = 1.0/height;',
+			            'vec2 texCoord = vUv;',
+			            'vec4 n[9];',
+			            'n[0] = texture2D(texture, texCoord + vec2( -w, -h));',
+			            'n[1] = texture2D(texture, texCoord + vec2(0.0, -h));',
+			            'n[2] = texture2D(texture, texCoord + vec2(  w, -h));',
+			            'n[3] = texture2D(texture, texCoord + vec2( -w, 0.0));',
+			            'n[4] = texture2D(texture, texCoord);',
+			            'n[5] = texture2D(texture, texCoord + vec2(  w, 0.0));',
+			            'n[6] = texture2D(texture, texCoord + vec2( -w, h));',
+			            'n[7] = texture2D(texture, texCoord + vec2(0.0, h));',
+			            'n[8] = texture2D(texture, texCoord + vec2(  w, h));',
+			            'vec4 sobel_horizEdge = n[2] + (2.0*n[5]) + n[8] - (n[0] + (2.0*n[3]) + n[6]);',
+			            'vec4 sobel_vertEdge  = n[0] + (2.0*n[1]) + n[2] - (n[6] + (2.0*n[7]) + n[8]);',
+			            'vec3 sobel = sqrt((sobel_horizEdge.rgb * sobel_horizEdge.rgb) + (sobel_vertEdge.rgb * sobel_vertEdge.rgb));',
+			            'gl_FragColor = vec4( sobel, 1.0 );',
+			        '}'
+			        ].join('\n')
+			}
 
 
 			//create 3d object and apply video texture to it
@@ -129,16 +181,23 @@
 
 			var geom = new THREE.PlaneGeometry( 1, 1 );
 
-			var material	= new THREE.MeshBasicMaterial({
-				color	: 0xffffff,
-				map	: videoTexture
-			});
+			//regular way to get a video texture material
+			// var material	= new THREE.MeshBasicMaterial({
+			// 	color	: 0xffffff,
+			// 	map	: videoTexture
+			// });
+
+		    var shader = sobelShader;
+
+		    material = new THREE.ShaderMaterial({
+		        uniforms: shader.uniforms,
+		        vertexShader: shader.vertexShader,
+		        fragmentShader: shader.fragmentShader
+		    });
 
 			var mesh	= new THREE.Mesh( geom, material );
-			mesh.scale.set(2.1, 1.6, 1);
-			mesh.position.x	= 0;
+			mesh.scale.set(4.2, 3.2, 1);
 			mesh.position.y	= 1.55;
-			mesh.position.z	= 0.8;
 			videoMesh.add(mesh)
 
 		}
@@ -231,6 +290,7 @@
 
 		    renderer.setSize( window.innerWidth, window.innerHeight );
 		}
+
 
 	</script>
 </body>
