@@ -9,18 +9,24 @@
 			
 		<script src="Three.js"></script>
 		<script src="Detector.js"></script>
-		<script src="TrackballControls.js"></script>
 		<style>
 			body{padding: 0px; margin: 0px;}
+			h1{position: absolute; bottom: 0px; background-color: black; color: white; font-size: 20px;}
 		</style>
 	</head>
-<body>
+<body onmousemove="mouseMove(event);">
 
 	<div id="container"></div>
+	<h1>Three.js + WebRTC + Shader - Please view in Chrome</h1>
 
 
 	<script type="text/javascript">
+		var mouseX = 0
+		var halfWidth = window.innerWidth/2, halfHeight = window.innerHeight/2;
 
+		function mouseMove(event) {
+			 mouseX = event.pageX - halfWidth
+		}
 
 
 		var scene, renderer;
@@ -39,7 +45,7 @@
 					antialias		: true,	// to get smoother output
 					preserveDrawingBuffer	: true	// to allow screenshot
 				});
-				renderer.setClearColorHex( 0x000000, 1 );
+				renderer.setClearColorHex( 0xFFFFFF, 1 );
 				renderer.autoClear = false
 			}else{
 				Detector.addGetWebGLMessage();
@@ -195,7 +201,7 @@
 		        fragmentShader: shader.fragmentShader
 		    });
 
-			var mesh	= new THREE.Mesh( geom, material );
+			window.mesh	= new THREE.Mesh( geom, material );
 			mesh.scale.set(4.2, 3.2, 1);
 			mesh.position.y	= 1.55;
 			videoMesh.add(mesh)
@@ -252,7 +258,7 @@
 
 		// animation loop
 		function animate() {
-
+			mesh.rotation.y = mouseX * .0009;
 			// loop on request animation loop
 			// - it has to be at the begining of the function
 			// - see details at http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
@@ -290,7 +296,6 @@
 
 		    renderer.setSize( window.innerWidth, window.innerHeight );
 		}
-
 
 	</script>
 </body>
